@@ -101,10 +101,10 @@ flowchart TD
 ```mermaid
 graph TD
     MVP[MVP 的本质属性]
-    MVP --> M1[MVP 是一个流程 (A Process, not just a thing)]
-    MVP --> M2[MVP 的核心在于验证关键假设 (Test Hypotheses)]
-    MVP --> M3[MVP 的核心使命在于对冲商业风险 (Mitigate Risk)]
-    MVP --> M4[MVP 必须具备可闭环的可行性 (Viable)]
+    MVP --> M1["MVP 是一个流程 (A Process, not just a thing)"]
+    MVP --> M2["MVP 的核心在于验证关键假设 (Test Hypotheses)"]
+    MVP --> M3["MVP 的核心使命在于对冲商业风险 (Mitigate Risk)"]
+    MVP --> M4["MVP 必须具备可闭环的可行性 (Viable)"]
 ```
 
 - **不是砍掉质量，而是缩小范围**：MVP 必须能完整跑通某一个核心价值闭环。如果一个产品宣传能解决代客泊车问题，哪怕它后台是人工手动的，用户在前端也必须能真正享受到车被安全停好的结果。

@@ -20,56 +20,21 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第四篇: 精益创业与 MVP))
-    第8章: 精益思维与MVP哲学
-      核心循环机制
-        Build 构建最小特性
-        Measure 采集真实客观数据
-        Learn 获取经证实的认知
-        Repeat 飞轮快速循环
-      核心法则
-        迭代速度 >>> 迭代质量
-        客观数据 >>> 主观观点
-      愿景、战略与支点
-        愿景 Vision (极少改变)
-        战略 Strategy (适时 Pivot 调整支点)
-        产品 Product (持续优化重构)
-      MVP 的本质
-        以最小投入获取最大经证实的认知
-    第9章: 假设拆解与高风险定位
-      精益禅模式 Lean Zen Mode
-        默认'我们一无所知'
-        列出全量假设清单 (以 Zirx 智能泊车为例)
-      最致命假设识别
-        若其为假则整个产品彻底崩塌
-      风险-难度四象限
-        第一优先级: 高风险 / 低难度
-        第二优先级: 高风险 / 高难度
-      科学假说陈述法
-        目标客群 + 预期行为 + 支撑理由
-        改善型假说与指标量化绑定
-    第10章: 6大 MVP 实操技法
-      最小成功标准 MCS
-        研发 + 营销 + 机会成本 vs 预期指标收益
-      六大实操战法
-        邮件 MVP (定向群体验证)
-        影子按钮 MVP (假按钮测点击转化)
-        404 / 敬请期待落地页 MVP
-        演示视频 MVP (如 Dropbox 概念视频)
-        拼装式组合 MVP (Piecemeal: 借力无代码)
-        礼宾服务与绿野仙踪 (Wizard of Oz)
-      实验评估与决策
-        Go / Pivot / Kill 三岔路口
-    第11章: 原型设计与概念可视化
-      三大保真度分层
-        低保真线框图 Wireframe (结构与信息)
-        中高保真模型 Mockup (视觉与审美)
-        高保真交互原型 Prototype (可用性测试)
-      工具链生态
-        Balsamiq, Figma, Axure, Sketch, 墨刀
-      PM 核心职责
-        关注流程与功能闭环，切忌死磕视觉配色
+flowchart TD
+    subgraph Part4["第四篇：精益创业与 MVP 实战篇"]
+        C8["<b>第8章：精益思维与 MVP 哲学</b><br/>· 构建-度量-学习 (BML) 核心飞轮<br/>· 速度大于质量 / 数据大于观点<br/>· 愿景、战略 (Pivot) 与产品三层架构"]
+        C9["<b>第9章：假设拆解与高风险定位</b><br/>· 精益禅模式与最致命假设 (Riskiest Assumption)<br/>· 风险-难度四象限矩阵排雷<br/>· 科学假说陈述法结构"]
+        C10["<b>第10章：6 大 MVP 实验技法</b><br/>· 最小成功标准 (MCS) 投资度量公式<br/>· 影子功能/着陆页/演示视频/拼装组合/绿野仙踪<br/>· Go / Pivot / Kill 三岔路口决策"]
+        C11["<b>第11章：原型设计与概念可视化</b><br/>· Wireframe / Mockup / Prototype 三级保真度<br/>· 主流工具链分工与 PM 线框图规范"]
+    end
+
+    C8 --> C9 --> C10 --> C11
+
+    style Part4 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C8 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C9 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    style C10 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style C11 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

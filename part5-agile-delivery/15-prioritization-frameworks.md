@@ -15,10 +15,10 @@
 ```mermaid
 graph TD
     Prioritization[四大主流优先级决策模型库]
-    Prioritization --> M1[1. Kano 满意度双轴模型 (洞察用户情感需求)]
-    Prioritization --> M2[2. BUC 商业投入产出模型 (量化打分排序)]
-    Prioritization --> M3[3. MoSCoW 范围四分法 (版本边界死线管控)]
-    Prioritization --> M4[4. RWW 战略商业筛选法 (新特性机会过滤)]
+    Prioritization --> M1["1. Kano 满意度双轴模型 (洞察用户情感需求)"]
+    Prioritization --> M2["2. BUC 商业投入产出模型 (量化打分排序)"]
+    Prioritization --> M3["3. MoSCoW 范围四分法 (版本边界死线管控)"]
+    Prioritization --> M4["4. RWW 战略商业筛选法 (新特性机会过滤)"]
 ```
 
 ---

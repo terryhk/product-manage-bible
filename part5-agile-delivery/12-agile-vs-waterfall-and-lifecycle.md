@@ -67,11 +67,16 @@ graph TD
 任何一款产品或特定功能，都无法逃脱由生到死的物理宿命。产品经理必须清楚地意识到当前产品所处的生命周期阶段：
 
 ```mermaid
-xychart-beta
-    title "产品生命周期经典 S 曲线 (Product Life Cycle)"
-    x-axis ["导入期 (Introduction)", "成长期 (Growth)", "成熟期 (Maturity)", "衰退期 (Decline)"]
-    y-axis "销售额与用户规模" 0 --> 100
-    line [ 5, 45, 95, 30 ]
+flowchart LR
+    S1["🌱 <b>导入期 (Introduction)</b><br/>规模小 / 亏损探索<br/><i>重心：验证 PMF 与留存</i>"]
+    --> S2["🚀 <b>成长期 (Growth)</b><br/>规模爆发 / 竞品跟进<br/><i>重心：规模获客与壁垒</i>"]
+    --> S3["👑 <b>成熟期 (Maturity)</b><br/>规模见顶 / 现金牛<br/><i>重心：精细运营与延长周期</i>"]
+    --> S4["🍂 <b>衰退期 (Decline)</b><br/>需求转移 / 利润萎缩<br/><i>重心：利润收割或平稳退市</i>"]
+
+    style S1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
+    style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;
+    style S3 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style S4 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
 ```
 
 ![Product Lifecycles Table](../assets/images/product-lifecycles-table.png)

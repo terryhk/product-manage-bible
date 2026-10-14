@@ -48,12 +48,15 @@ Aha Moment 是指用户在产品交互中，**第一次真正领略到产品核�
 如果说激活是点燃火种，那么留存就是让火焰持续燃烧的木柴。**留存是所有产品指标中最重要的地基。没有留存，一切增长都是虚妄！**
 
 ```mermaid
-xychart-beta
-    title "用户留存衰减曲线与队列分析 (Cohort Retention Curve)"
-    x-axis ["Day 1", "Day 3", "Day 7", "Day 14", "Day 30", "Day 60"]
-    y-axis "留存率 (%)" 0 --> 100
-    line [ 100, 48, 32, 25, 22, 21 ]
-    line [ 100, 30, 15, 8, 3, 0 ]
+flowchart TD
+    subgraph RetentionCurves["留存衰减双轨形态对比 (Cohort Retention Curve)"]
+        Healthy["🟢 <b>健康粘性产品（平稳收敛）</b><br/>D1 (100%) → D7 (32%) → D14 (25%) → D30 (22%) → <b>走平 (Flattened)</b><br/><i>具备真实留存基本盘，用户形成稳定使用心智</i>"]
+        Leaky["🔴 <b>漏水烂桶产品（持续衰减）</b><br/>D1 (100%) → D7 (15%) → D14 (8%) → D30 (3%) → <b>趋近于0</b><br/><i>缺乏核心价值，盲目买量导致投产比崩塌</i>"]
+    end
+
+    style RetentionCurves fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style Healthy fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
+    style Leaky fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
 ```
 
 - **绿色曲线（健康有粘性的产品）**：经历初期的自然脱落后，在 Day 14 ~ Day 30 逐渐**“拉平走平”（Flatten the Curve）**。平稳收敛的基底意味着产品具备了真实忠诚的基本盘！

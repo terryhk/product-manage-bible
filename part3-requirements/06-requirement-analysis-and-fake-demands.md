@@ -34,20 +34,19 @@ flowchart TD
 什么是伪需求？在产品圈，这个词常被滥用。根据一线长期实践，**伪需求绝不是“用户凭空胡说”**，其本质规律如下：
 
 ```mermaid
-mindmap
-  root((伪需求的本质真相))
-    痛点量级不足
-      只是'弱痒点' (Nice-to-have)
-      而非'刚需剧痛' (Must-have)
-    商业不可行
-      用户极度喜欢，但不愿掏钱买单
-      单客获取与服务成本远高于 LTV
-    人群错位
-      某些人的伪需求是另一群人的真需求
-      样本偏差导致把非目标客群当主力
-    时机不成熟
-      基础设施不具备 (如 3G 时代做高清实时直播)
-      彼时的伪需求可进化为未来的真需求
+flowchart TD
+    Root["<b>伪需求的本质真相</b>"]
+    
+    Root --> M1["<b>1. 痛点量级不足</b><br/>只是『弱痒点』(Nice-to-have)<br/>而非『刚需剧痛』(Must-have)"]
+    Root --> M2["<b>2. 商业不可行</b><br/>用户喜欢但不愿掏钱买单<br/>获客履约成本远超生命周期价值 LTV"]
+    Root --> M3["<b>3. 人群错位</b><br/>某些人的伪需求是另一群人的真需求<br/>样本偏差导致误把非目标客群当主力"]
+    Root --> M4["<b>4. 时机不成熟</b><br/>基础设施尚未具备 (如2G时代强推视频直播)<br/>彼时的伪需求可随时代演进为真需求"]
+
+    style Root fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    style M1 fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px;
+    style M2 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style M3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style M4 fill:#f1f5f9,stroke:#64748b,stroke-width:1.5px;
 ```
 
 > [!NOTE]
@@ -75,8 +74,8 @@ mindmap
 
 ```mermaid
 graph LR
-    A[5W2H 需求定义框架] --> B[5W (核心背景与场景)]
-    A --> C[2H (手段与代价)]
+    A["5W2H 需求定义框架"] --> B["5W (核心背景与场景)"]
+    A --> C["2H (手段与代价)"]
 
     B --> B1[Why 为什么做 / 核心背景与动机]
     B --> B2[What 具体做什么 / 功能与交付物定义]

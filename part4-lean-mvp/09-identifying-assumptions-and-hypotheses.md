@@ -30,19 +30,19 @@ graph LR
 看似逻辑完美的闭环背后，究竟支撑了哪些未经证实的底层假设？
 
 ```mermaid
-mindmap
-  root((Zirx 商业假设清单))
-    市场与痛点假设
-      市中心停车位严重供不应求
-      车主觉得现有车库不方便且价格过高
-      车主更在乎价格与便利，不在乎等候时间
-    用户行为与技术假设
-      车主普遍拥有智能手机
-      车主能够在驾车途中安全操作 App 下单
-    供给侧劳动力假设
-      能以低廉成本招募到足够多背景清白的兼职泊车员
-    致命安全与信任假设
-      车主是否愿意把价值数十万元的私家车和钥匙交给陌生的路边陌生人？
+flowchart TD
+    Root["<b>Zirx 商业底层假设清单</b>"]
+    
+    Root --> H1["<b>1. 市场与痛点假设</b><br/>· 市中心停车位严重供不应求<br/>· 商业车库收费过高且不便<br/>· 车主在乎便利大于等车时间"]
+    Root --> H2["<b>2. 用户行为与硬件假设</b><br/>· 目标车主普及智能手机<br/>· 车主能在途中安全操作下单"]
+    Root --> H3["<b>3. 供给侧劳动力假设</b><br/>· 极低成本招募背景清白的泊车员<br/>· 远端车库租赁成本可控"]
+    Root --> H4["<b>4. 致命安全与信任假设</b><br/>· 车主是否愿意将数十万私家车钥匙<br/>交给路边的陌生人？"]
+
+    style Root fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    style H1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style H2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;
+    style H3 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style H4 fill:#fee2e2,stroke:#dc2626,stroke-width:2px;
 ```
 
 ### 假设清单盘点
@@ -74,18 +74,24 @@ mindmap
 在面对繁杂的假设列表时，业界通常使用 **风险-难度四象限矩阵（Risk / Difficulty Square）** 来决定实验的先后攻击顺序：
 
 ```mermaid
-quadrantChart
-    title 假设优先攻击四象限 (Risk vs Difficulty)
-    x-axis "验证难度 (Difficulty: 时间与资源消耗)" --> "高难度 (High Effort)"
-    y-axis "商业风险 (Risk: 对产品成败的致命度)" --> "高风险 (High Risk)"
-    quadrant-1 "第二攻击目标 (High Risk / High Effort)<br/>• 需巧妙设计极简实验降低难度"
-    quadrant-2 "第一绝对攻击靶心 (High Risk / Low Effort)<br/>• 黄金验证区! 优先用极小代价排雷"
-    quadrant-3 "次要考虑区 (Low Risk / Low Effort)<br/>• 顺手处理，不占用核心资源"
-    quadrant-4 "致命陷阱区 (Low Risk / High Effort)<br/>• 坚决杜绝! 耗费巨资自嗨"
-    "信任陌生人代客泊车": [0.35, 0.9]
-    "市中心停车费过高": [0.2, 0.75]
-    "大规模招募合规泊车员": [0.8, 0.85]
-    "App界面视觉与动效": [0.75, 0.2]
+flowchart TD
+    subgraph Matrix["假设优先攻击四象限 (Risk vs Difficulty)"]
+        direction TB
+        subgraph TopRow["商业风险高 (High Risk - 关乎生死存亡)"]
+            Q2["🎯 <b>第一绝对攻击靶心 (Low Effort)</b><br/>黄金验证区！优先用极小代价排雷<br/><i>例：陌生人车辆代泊信任与责任险成本</i>"]
+            Q1["⚠️ <b>第二攻击目标 (High Effort)</b><br/>需巧妙设计极简实验降低验证门槛<br/><i>例：自建多网点泊车运营调度网络</i>"]
+        end
+        subgraph BottomRow["商业风险低 (Low Risk - 局部优化)"]
+            Q3["顺手考虑区 (Low Effort)<br/>顺手处理，不占核心资源<br/><i>例：手机客户端极简界面与交互</i>"]
+            Q4["🚫 <b>致命陷阱区 (High Effort)</b><br/>坚决杜绝！耗费巨资自嗨造轮子<br/><i>例：尚未验证需求便研发自动化泊车算法</i>"]
+        end
+    end
+
+    style Matrix fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style Q2 fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    style Q1 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style Q3 fill:#f1f5f9,stroke:#64748b,stroke-width:1.5px;
+    style Q4 fill:#fee2e2,stroke:#991b1b,stroke-width:1px;
 ```
 
 ![Risk and Difficulty Square](../assets/images/risk-difficulty-square.png)

@@ -38,18 +38,24 @@ graph TD
 并非所有对手都具有同样的威胁。产品经理必须建立清晰的象限坐标，将对手精细化划分为四种层级，并匹配不同的竞争战略：
 
 ```mermaid
-quadrantChart
-    title 竞争对手四级分类矩阵 (Competitor Matrix)
-    x-axis "问题解决方式 (Different Angle)" --> "解决方式相同 (Same Solution)"
-    y-axis "目标用户群体 (Different Target)" --> "目标群体相同 (Same Target)"
-    quadrant-1 "直接竞争对手 (Direct)<br/>• 贴身肉搏 / 赢取核心差异"
-    quadrant-2 "间接竞争对手 (Indirect)<br/>• 严防客户流失"
-    quadrant-3 "替代品 (Substitute)<br/>• 警惕认知降维颠覆"
-    quadrant-4 "潜在竞争对手 (Potential)<br/>• 筑高壁垒防复制"
-    "核心竞品 A": [0.85, 0.85]
-    "跨赛道工具 B": [0.25, 0.8]
-    "大厂相近产品线 C": [0.75, 0.3]
-    "传统非数字化手段 D": [0.15, 0.2]
+flowchart TD
+    subgraph Grid["竞争对手四级分类矩阵 (Competitor Matrix)"]
+        direction TB
+        subgraph TopRow["目标用户群体相同 (Same Target)"]
+            Q2["<b>间接竞争对手 (Indirect)</b><br/>解决方式不同 / 目标客群重叠<br/><i>策略：守住基本盘，防范流失</i>"]
+            Q1["<b>直接竞争对手 (Direct)</b><br/>解决方式相同 / 目标客群重叠<br/><i>策略：贴身肉搏，赢取核心差异</i>"]
+        end
+        subgraph BottomRow["目标用户群体不同 (Different Target)"]
+            Q3["<b>替代品威胁 (Substitute)</b><br/>解决方式不同 / 目标客群不同<br/><i>策略：保持敏感，警惕降维打击</i>"]
+            Q4["<b>潜在竞争对手 (Potential)</b><br/>解决方式相同 / 当前客群不同<br/><i>策略：筑高行业壁垒防复制</i>"]
+        end
+    end
+
+    style Grid fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style Q1 fill:#fee2e2,stroke:#ef4444,stroke-width:2px;
+    style Q2 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style Q3 fill:#f1f5f9,stroke:#64748b,stroke-width:1.5px;
+    style Q4 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
 ```
 
 ![GoPro Hero 4 Competitor Quadrants](../assets/images/gopro-competitors-quadrant.png)

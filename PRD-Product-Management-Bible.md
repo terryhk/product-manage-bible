@@ -42,19 +42,18 @@
 ## 3. 目标受众与用户画像 (Target Audience & Personas)
 
 ```mermaid
-mindmap
-  root((目标受众))
-    零基础 / 转岗候选人
-      需要：职业认知、全流程图谱、冰山模型避坑、基础交付物标准
-      痛点：缺乏实战经验、概念混淆、不知道简历与面试怎么准备
-    初中级产品经理 (1-3年)
-      需要：需求挖掘真伪辨析、MVP设计模型、PRD与用户故事规范、指标监控
-      痛点：常沦为“功能型/画图工具人”、需求变动频繁、开发沟通成本高
-    进阶/行业型产品经理 (3-5年+)
-      需要：ToB架构思维、华为IPD流程、硬件与电信网络产品化、商业盈利测算
-      痛点：业务壁垒难以突破、跨部门协同内耗、缺乏体系化战略视角
-    开源贡献者 / 知识库共建者
-      需要：规范的 Markdown 体系、清晰的目录架构、低门槛的 PR/Issue 流程
+flowchart TD
+    Root["<b>目标受众四层全景</b>"]
+    Root --> A1["<b>1. 零基础 / 转岗候选人</b><br/>诉求：职业认知、全流程图谱、基础交付物标准<br/>痛点：缺乏实战经验、面试准备无从下手"]
+    Root --> A2["<b>2. 初中级产品经理 (1-3年)</b><br/>诉求：需求真伪辨析、MVP模型、PRD规范、指标监控<br/>痛点：沦为画图工具人、需求反复返工"]
+    Root --> A3["<b>3. 进阶/行业型产品经理 (3-5年+)</b><br/>诉求：ToB 架构、华为 IPD、云网与硬件产品化、ROI测算<br/>痛点：业务壁垒难以突破、跨部门协同内耗严重"]
+    Root --> A4["<b>4. 开源共建者 / 知识库贡献者</b><br/>诉求：结构化知识沉淀、清晰的 PR/Issue 流程"]
+
+    style Root fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    style A1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style A2 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style A3 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
+    style A4 fill:#f1f5f9,stroke:#64748b,stroke-width:1.5px;
 ```
 
 ### 画像详情

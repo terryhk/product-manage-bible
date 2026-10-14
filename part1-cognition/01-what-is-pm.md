@@ -102,13 +102,20 @@ graph LR
 产品经理在规划产品特性时，不能将所有功能等量齐观。日本质量管理专家狩野纪昭提出的模型揭示了产品特性取悦用户的本质规律：
 
 ```mermaid
-xychart-beta
-    title "Kano 模型：功能完善度 vs 用户满意度"
-    x-axis ["完全无实现", "部分具备", "完全实现"]
-    y-axis "满意度 (-100 到 +100)" -100 --> 100
-    line [ -80, -20, 0 ]
-    line [ -60, 0, 70 ]
-    line [ 0, 40, 95 ]
+flowchart TD
+    subgraph Kano["Kano 需求模型：三大属性与满意度关系"]
+        M["<b>必备属性 (Must-be Quality)</b><br/>具备不增加满意度；不具备直接引发愤怒流失<br/><i>底线要求：系统零故障、核心功能可用</i>"]
+        O["<b>期望属性 (One-dimensional Quality)</b><br/>功能越完善越满意，缺失则不满意<br/><i>线性递增：运行速度、续航时长、接口吞吐</i>"]
+        A["<b>魅力属性 (Attractive Quality)</b><br/>未预期但具备时极大触发惊喜与高忠诚度<br/><i>差异化壁垒：首创体验、智能洞察推荐</i>"]
+    end
+
+    A -.->|"行业成熟普及"| O
+    O -.->|"演化为基础要求"| M
+
+    style Kano fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style M fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px;
+    style O fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style A fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
 ```
 
 1. **基本因素（Must-be Quality，必备属性）**：
@@ -186,17 +193,26 @@ graph TD
 产品经理的一天从不是按部就班的单线程流水线，而是动态、高度协同与多线程并行运作的过程：
 
 ```mermaid
-timeline
-    title 产品经理典型工作日程切片
-    09:00 : 行业与竞品情报扫描 : 邮件与未读消息过滤
-    10:00 : 监控指标大盘 (Metrics Dashboard) : 追踪异常波动归因
-    11:00 : 研发每日站会 (Daily Standup) : 同步进度与排查阻碍
-    11:30 : 设计师方案同步 (Design Sync) : 探讨交互方案与用研反馈
-    12:00 : 深度工作 (Deep Work) : 编写用户故事、Epic Specs、PRD
-    13:30 : 体验验收 (Dogfooding) : 实际测试最新 Android/iOS/Web Release
-    14:30 : 跨职能推进 (Cross-functional) : 销售/运营/法务协同会
-    16:30 : 深度数据挖掘或用户访谈 : 与数据团队/用研客户连线
-    18:00 : 复盘今日 Action Items : 发送会议纪要与跟进邮件
+flowchart TD
+    T1["<b>09:00 - 10:00</b><br/>行业与竞品情报扫描<br/><i>邮件与未读消息过滤</i>"]
+    --> T2["<b>10:00 - 11:00</b><br/>监控指标大盘 (Metrics Dashboard)<br/><i>追踪核心KPI异常波动归因</i>"]
+    --> T3["<b>11:00 - 11:30</b><br/>研发每日站会 (Daily Standup)<br/><i>同步研发进度与排查阻碍</i>"]
+    --> T4["<b>11:30 - 12:00</b><br/>设计师方案同步 (Design Sync)<br/><i>探讨交互细节与用研反馈</i>"]
+    --> T5["<b>12:00 - 13:30</b><br/>深度工作 (Deep Work)<br/><i>编写用户故事、Epic Specs、PRD</i>"]
+    --> T6["<b>13:30 - 14:30</b><br/>体验验收 (Dogfooding)<br/><i>实际测试最新发布版本</i>"]
+    --> T7["<b>14:30 - 16:30</b><br/>跨职能推进 (Cross-functional)<br/><i>销售/运营/法务协同攻坚会</i>"]
+    --> T8["<b>16:30 - 18:00</b><br/>深度数据挖掘或用户访谈<br/><i>与数据团队/目标客户连线</i>"]
+    --> T9["<b>18:00+</b><br/>复盘今日 Action Items<br/><i>发送会议纪要与跟进邮件</i>"]
+
+    style T1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
+    style T2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;
+    style T3 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;
+    style T4 fill:#fdf4ff,stroke:#c026d3,stroke-width:1.5px;
+    style T5 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style T6 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style T7 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    style T8 fill:#f5f3ff,stroke:#7c3aed,stroke-width:1.5px;
+    style T9 fill:#f1f5f9,stroke:#475569,stroke-width:1.5px;
 ```
 
 - **09:00 - 10:00【信息输入与行业脉搏】**

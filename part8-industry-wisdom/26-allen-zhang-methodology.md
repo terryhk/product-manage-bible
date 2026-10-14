@@ -147,16 +147,24 @@ flowchart LR
 从第 1 章的“认知定位与三圈模型”，一路走到第 26 章的“张小龙大师心智”，我们跨越了产品经理从初生萌芽到大成之境的整座高峰：
 
 ```mermaid
-timeline
-    title 《产品经理全书》知识图谱与演进史诗
-    认知底座 : 第1-2章 认知定位、三圈模型与双通道晋升
-    战略洞察 : 第3-4章 宏观五力、PESTEL与四维竞品雷达
-    需求真伪 : 第5-7章 想法源泉、伪需求刺破与客户开发访谈
-    精益验证 : 第8-11章 假设识别、MVP实验与线框低保真原型
-    敏捷交付 : 第12-15章 研发双轨、Scrum/看板、用户故事与优先级
-    数据度量 : 第16-18章 指标心智、HEART模型与AARRR漏斗归因
-    跨界协同 : 第19-21章 干系人政治、高效会议模板与职场术语黑话
-    行业纵深 : 第22-26章 ToB壁垒、电信云网、硬件量产、华为IPD与张小龙心智
+flowchart TD
+    P1["🌱 <b>第一篇：认知底座</b><br/>第1-2章 认知定位、三圈模型与双通道晋升"]
+    --> P2["🔭 <b>第二篇：战略洞察</b><br/>第3-4章 宏观五力、PESTEL与四维竞品雷达"]
+    --> P3["🔍 <b>第三篇：需求真伪</b><br/>第5-7章 想法源泉、伪需求刺破与客户开发访谈"]
+    --> P4["🧪 <b>第四篇：精益验证</b><br/>第8-11章 假设识别、MVP实验与线框低保真原型"]
+    --> P5["🚀 <b>第五篇：敏捷交付</b><br/>第12-15章 研发双轨、Scrum/看板、用户故事与优先级"]
+    --> P6["📈 <b>第六篇：数据度量</b><br/>第16-18章 指标心智、HEART模型与AARRR漏斗归因"]
+    --> P7["🤝 <b>第七篇：跨界协同</b><br/>第19-21章 干系人政治、高效会议模板与职场术语黑话"]
+    --> P8["🏔️ <b>第八篇：行业纵深</b><br/>第22-26章 ToB壁垒、电信云网、硬件量产、华为IPD与大师心智"]
+
+    style P1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
+    style P2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;
+    style P3 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;
+    style P4 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style P5 fill:#fdf4ff,stroke:#c026d3,stroke-width:1.5px;
+    style P6 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style P7 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    style P8 fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
 ```
 
 产品经理，是数字时代最激动人心的职业之一。你手中握着的键盘与文档，在未来可能会转化为数十万行代码、数百条工业产线的精密装配、以及全球数亿用户指尖的愉悦跳动。

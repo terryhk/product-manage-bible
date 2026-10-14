@@ -19,46 +19,17 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第二篇: 市场与竞争))
-    第3章: 市场分析与容量测算
-      市场界定与吸引力
-        解决什么问题 & 为谁解决
-        市场吸引力评估矩阵
-        增长驱动因素 (技术/人口/政策)
-      市场容量测算双模型
-        自上而下 Top-down (乐观乘法)
-        自下而上 Bottom-up (稳健锚定)
-      波特五力模型实战
-        供应商议价力
-        买方议价力
-        潜在进入者威胁
-        替代品替代能力
-        同业竞争强度
-        五力模型的局限与缺陷
-      权威行业报告应用
-        Gartner 魔力象限
-        IDC 市场份额追踪
-    第4章: 竞争情报与对手监控
-      竞品四级分类与策略
-        直接竞品 Direct (正面硬刚/求差异)
-        间接竞品 Indirect (防范客户流失)
-        潜在竞品 Potential (筑高进入壁垒)
-        替代品 Substitute (认知颠覆与体验超越)
-      对手评估五大黄金维度
-        产品核心团队 Core
-        用户规模基数 Size
-        产品设计审美 Design
-        品牌号召力 Brand
-        组织迭代速度 Speed
-      特性矩阵图 Feature Table
-        横纵轴设计逻辑
-        寻找比较优势 (Clear Differentiation)
-      动态情报监控体系
-        资本与融资 (Crunchbase)
-        团队与并购 (收购动机解析)
-        版本与新特性 (Google Alerts / Mention)
-        跨界情报交叉学习
+flowchart TD
+    subgraph Part2["第二篇：市场与竞争篇"]
+        C3["<b>第3章：市场分析与容量测算</b><br/>· 市场吸引力评估矩阵与增长驱动力<br/>· 市场容量测算双模型 (Top-down vs Bottom-up)<br/>· 波特五力模型实战与局限性批判<br/>· Gartner 魔力象限与 IDC 报告解码"]
+        C4["<b>第4章：竞争情报与对手监控</b><br/>· 竞品四级分类与攻防策略 (直接/间接/潜在/替代)<br/>· 对手评估五大黄金维度 (团队/规模/设计/品牌/速度)<br/>· 特性矩阵表 (Feature Table) 差异化打法<br/>· 动态情报监控体系 (资本/并购/新特性/跨界)"]
+    end
+
+    C3 --> C4
+
+    style Part2 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C4 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
 ```
 
 ---

@@ -44,35 +44,27 @@ flowchart TD
 在电信与 ICT 领域，由于涉及巨额网络设备采购（光缆租赁、交换机/路由器采购、PoP 点机房租赁），一次错误立项可能带来数千万甚至数亿元的坏账或资产折旧。因此，电信产品立项具备极其严格的决策审查标准：
 
 ```mermaid
-mindmap
-  root((电信产品立项<br/>8大决策要素))
-    目标消费群体
-      细分行业客户
-      跨国中资出海企业
-      OTT大客户
-    市场总量与空间
-      TAM/SAM理论峰值
-      带宽与线路最大销售规模
-    消费者真实需求
-      低时延线路
-      高可用容灾
-      云网协同互通
-    客户价格承受力
-      价格弹性
-      成本底线与毛利红线
-    市场竞争要素
-      同类竞争对手与替代品
-      骨干网资源覆盖优劣势
-    市场与技术演进
-      从MPLS到SD-WAN
-      从传统专线到云互联
-    技术实现能力
-      端到端交付与运维SLA
-      POP节点资源覆盖率
-    投资成本与收益
-      CAPEX资本性支出
-      OPEX运营支出
-      IRR内部收益率与回本期
+flowchart TD
+    Root["<b>电信产品立项 8 大刚性决策要素</b>"]
+
+    Root --> E1["<b>1. 目标客户群体</b><br/>细分行业客户 / 中资出海企业 / OTT大客户"]
+    Root --> E2["<b>2. 市场总量与空间</b><br/>TAM/SAM 理论峰值 / 带宽与线路最大销售规模"]
+    Root --> E3["<b>3. 客户真实需求</b><br/>极低时延要求 / 高可用容灾 / 云网协同互联"]
+    Root --> E4["<b>4. 价格承受能力</b><br/>需求价格弹性 / 成本底线与毛利红线测算"]
+    Root --> E5["<b>5. 市场竞争要素</b><br/>同类对手海缆资源 / 骨干网 PoP 覆盖优劣势"]
+    Root --> E6["<b>6. 市场与技术演进</b><br/>从物理专线到 SD-WAN、SASE 与云互联"]
+    Root --> E7["<b>7. 技术实现能力</b><br/>端到端交付自动化 / 资源覆盖率与运维 SLA"]
+    Root --> E8["<b>8. 投资成本与收益</b><br/>CAPEX 资本支出 / OPEX 运营支出 / 财务 ROI"]
+
+    style Root fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    style E1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style E2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;
+    style E3 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;
+    style E4 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style E5 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    style E6 fill:#f5f3ff,stroke:#7c3aed,stroke-width:1.5px;
+    style E7 fill:#fdf4ff,stroke:#c026d3,stroke-width:1.5px;
+    style E8 fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
 ```
 
 1. **目标消费群体（Target Customers）**：明确细分市场。例如针对中资金融机构出海，其对跨境通信的核心诉求是“数据合规与金融级确定性超低时延”，而跨境电商客户则更看重“峰值弹性与单位带宽成本”。

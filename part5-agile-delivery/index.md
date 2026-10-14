@@ -19,52 +19,21 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第五篇: 敏捷研发与推进))
-    第12章: 研发模式与生命周期
-      敏捷 Agile vs 瀑布 Waterfall
-        瀑布特征: 串行大批量、前置设计、适应性低
-        瀑布适用场景: 操作系统、建筑、汽车引擎、不可逆硬件
-        敏捷特征: 小批量切片、端到端闭环、高频市场反馈
-      产品生命周期四阶段
-        引入期 Introduction (小范围、低竞争、亏损探索)
-        成长期 Growth (市场接受、营收爆发、快速优化)
-        成熟期 Maturity (顶峰竞争、利润稳健、精细化维稳)
-        衰退期 Decline (功能退市 Sun-setting、平稳收尾)
-    第13章: Scrum与看板实战
-      Scrum 核心仪式与物件
-        Product Backlog vs Sprint Backlog
-        Sprint 规划会 (2周周期为王)
-        每日站会 Daily Standup (10~15分钟排雷)
-        评审会 Review & 回顾会 Retrospective (Good/Bad/Questions)
-      看板 Kanban 实操
-        状态流动: To do -> In progress -> Done
-        核心机制: 在制品限制 (WIP Limit)
-      敏捷估算与速率
-        故事点 Story Points (相对难度衡量)
-        团队速率 Velocity (稳健度量与排期基石)
-    第14章: 标准交付物模板
-      自上而下的任务拆解链
-        Vision -> Goals -> Initiatives -> Epics -> Stories -> Tasks/Bugs
-      Epic Spec 史诗规格说明书
-        1. 简介 Introduction (目标/背景/指标)
-        2. 产品需求 Product Requirements (功能细节)
-        3. 设计要求 Design Requirements (原型与交互)
-        4. 工程要求 Engineering Requirements (架构/接口/非功能)
-      用户故事 User Story
-        As a... I want to... So that...
-      验收准则 AC 标准
-        Given... When... Then...
-    第15章: 需求优先级决策模型库
-      Kano 模型
-        必备属性、期望属性、魅力属性、无差异、反向属性
-        动态退化规律与问卷打分
-      BUC 价值模型
-        Business Benefits + User Benefits - Cost (1~10打分)
-      MoSCoW 四分法
-        Must 必须做, Should 应该做, Could 可以做, Would 不做
-      RWW 商业筛选法
-        Real 真需求? Win 能赢吗? Worth 值得做?
+flowchart TD
+    subgraph Part5["第五篇：敏捷研发与交付篇"]
+        C12["<b>第12章：敏捷 vs 瀑布与产品生命周期</b><br/>· 研发模式边界与小批量切片原则<br/>· 生命周期四阶段 (引入/成长/成熟/衰退)"]
+        C13["<b>第13章：Scrum 与看板项目实战</b><br/>· 双周冲刺全套仪式 (Standup/Review/Retro)<br/>· 看板流动治理与在制品限制 (WIP Limit)<br/>· 故事点估算与团队速率 (Velocity)"]
+        C14["<b>第14章：史诗规格与用户故事规范</b><br/>· 任务拆解链 (Vision → Goals → Epics → Stories)<br/>· Epic Spec 工业级四大板块模板<br/>· User Story 与 Given/When/Then 验收标准 (AC)"]
+        C15["<b>第15章：需求优先级决策模型库</b><br/>· Kano 模型五维判定与动态退化<br/>· BUC 净收益量化与 MoSCoW 四分法<br/>· RWW 商业筛选硬核漏斗"]
+    end
+
+    C12 --> C13 --> C14 --> C15
+
+    style Part5 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C12 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C13 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;
+    style C14 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style C15 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

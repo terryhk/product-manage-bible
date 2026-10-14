@@ -48,12 +48,12 @@ graph TD
 flowchart TD
     subgraph TopDown["自上而下法 (Top-down)"]
         TD1[总市场大盘 Total Market] --> TD2[假设我们能拿下 1%~5% 份额]
-        TD2 --> TD3[得出预期销售额<br/>(偏乐观 / 融资导向)]
+        TD2 --> TD3["得出预期销售额<br/>(偏乐观 / 融资导向)"]
     end
 
     subgraph BottomUp["自下而上法 (Bottom-up)"]
         BU1[锚定生态参照物真实销量] --> BU2[测算流量入口、转化率与客单价]
-        BU2 --> BU3[得出可实现的稳健预期<br/>(偏保守 / 研发与实操导向)]
+        BU2 --> BU3["得出可实现的稳健预期<br/>(偏保守 / 研发与实操导向)"]
     end
 
     TopDown -.->|交叉校验| BottomUp
@@ -127,18 +127,24 @@ graph TD
 在 ToB 企业级服务、云计算、通信（ICT）与数据智能领域，产品经理必须学会阅读并借助权威分析机构的研报建立行业说服力：
 
 ```mermaid
-quadrantChart
-    title Gartner 科技魔力象限 (Magic Quadrant)
-    x-axis "愿景前瞻性 (Completeness of Vision)" --> "强"
-    y-axis "执行能力 (Ability to Execute)" --> "强"
-    quadrant-1 "领导者 (Leaders)"
-    quadrant-2 "挑战者 (Challengers)"
-    quadrant-3 "特定领域者 (Niche Players)"
-    quadrant-4 "有远见者 (Visionaries)"
-    "头部行业巨头": [0.8, 0.85]
-    "敏捷独角兽": [0.75, 0.4]
-    "传统重资产交付商": [0.25, 0.7]
-    "初创垂类工具": [0.3, 0.2]
+flowchart TD
+    subgraph Gartner["Gartner 科技魔力象限 (Magic Quadrant)"]
+        direction TB
+        subgraph HighExec["执行能力强 (High Ability to Execute)"]
+            Challengers["<b>挑战者 (Challengers)</b><br/>当前交付能力极强 / 愿景较传统<br/><i>标杆：传统重资产交付商</i>"]
+            Leaders["<b>领导者 (Leaders)</b><br/>愿景前瞻 + 执行交付双强<br/><i>标杆：头部行业云网巨头</i>"]
+        end
+        subgraph LowExec["执行能力弱/早期 (Low Ability to Execute)"]
+            Niche["<b>特定领域者 (Niche Players)</b><br/>聚焦垂直细分 / 综合能力有限<br/><i>标杆：初创垂类单点工具</i>"]
+            Visionaries["<b>有远见者 (Visionaries)</b><br/>架构创新前瞻 / 规模交付待验证<br/><i>标杆：敏捷技术独角兽</i>"]
+        end
+    end
+
+    style Gartner fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style Leaders fill:#dcfce7,stroke:#16a34a,stroke-width:2px;
+    style Challengers fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style Visionaries fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style Niche fill:#f1f5f9,stroke:#64748b,stroke-width:1.5px;
 ```
 
 ### 1. Gartner 魔力象限（Magic Quadrant）应用心法

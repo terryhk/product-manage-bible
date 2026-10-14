@@ -25,52 +25,19 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第七篇: 跨职能协同与管理))
-    第19章: 利益相关者协同指南
-      沟通中枢定位
-        无行政权力的领导 Leading without Authority
-        定制多语种同传翻译器
-      与工程师协同 Engineers
-        提供极致细节与自洽逻辑 (Need detail)
-        承担需求不准的兜底责任
-        替研发分担脏活累活 (提前查日志/抓包)
-        技术债务预防与清理机制 (Tech Debt)
-        绝不把研发当做外包工具人 (No Agency)
-      与设计师协同 Designers
-        给予充分创意自由 (Design Freedom)
-        讲痛点目标而非画图命令 (Problem first)
-        全量数据与用户原声共享
-      与销售与市场协同 Sales & Marketing
-        提供可杠杆化武器库 (Collateral: FAQ/白皮书)
-        对齐发布排期 (Launch Readiness)
-      与高管汇报协同 Executives
-        简明扼要 (Be brief & Bullet points)
-        直击商业价值与ROI (Speak in business impact)
-    第20章: 高价值会议与纪要沉淀
-      会议前准备 Before
-        前置核查是否真正需要会议
-        明确核心目标 Objective
-        发布精准议程 Agenda (提供双时间选项)
-      会议中控场 During
-        明确三方角色 (需求方 / PM协调方 / 实施方)
-        5W2H 背景陈述与普遍性把关
-        锁定唯一责任人 DRI (Directly Responsible Individual)
-      会议后闭环 After
-        当天发出会议纪要 Meeting Minutes
-        Action Items 结构化追踪 (任务/负责人/ETA)
-    第21章: 行业暗语与生存心法
-      两大核心生存 Tricks
-        Call out (提前大声疾呼潜在风险与边界)
-        Make some noises (定期释放产品里程碑与声量)
-      高频行业暗语速查
-        Armotized (成本分摊与折旧)
-        Oversubscribed (资源超卖与复用)
-        Supersede (废弃接管与平稳替换)
-        Replenishment (水位补给与资源补仓)
-        Pro Rata (按比例分配 / 平均折算)
-        ETA (预计交付到达时间)
-        Spike, Dogfooding, Blameless Post-mortem
+flowchart TD
+    subgraph Part7["第七篇：跨职能协同与团队管理篇"]
+        C19["<b>第19章：跨职能利益相关者协同</b><br/>· 无行政权力的领导 (Leading without Authority)<br/>· 与研发协同 (极致细节/分担脏活/清技术债)<br/>· 与设计/销售/高管协同的语言体系切换"]
+        C20["<b>第20章：高价值会议与纪要沉淀模板</b><br/>· 会前核查、精准议程与双时间选项<br/>· 会中控场 5W2H 与唯一责任人 (DRI)<br/>· 会后当天纪要闭环与 Action Items 矩阵"]
+        C21["<b>第21章：外企行业暗语与职场生存心法</b><br/>· 两大生存心法 (Call out 与 Make some noises)<br/>· 10 大硬核产研暗语深度解码 (Amortized/Supersede/Spike等)"]
+    end
+
+    C19 --> C20 --> C21
+
+    style Part7 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C19 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C20 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style C21 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

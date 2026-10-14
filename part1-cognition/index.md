@@ -19,47 +19,17 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第一篇: 认知与定位))
-    第1章: 什么是产品经理
-      产品三环模型
-        用户体验 UX
-        商业可行 Business
-        技术落地 Technology
-      三样交付物
-        情境 Context
-        观点 Point of View
-        愿景 Vision
-      优秀特质
-        好奇心与洞察
-        同理心与连接
-        理性与受挫力
-        勇于坚决说不
-        跨学科通才
-      避坑警示
-        Stop Doing List
-        典型工作日常
-    第2章: 职业发展与竞争力
-      角色边界
-        PM vs 研发架构
-        PM vs UI/UX 设计
-        PM vs 项目经理 PjM
-      职业天梯
-        功能模块 PM
-        产品线高级 PM
-        业务领域总监 / VP
-        产品 CEO (如张小龙)
-      冰山模型
-        显性技能 (画图/写文档)
-        隐性底层 (思考/决策/统筹)
-      十年宿命与护城河
-        平庸 / 混日子 / 创业 / 小有成就
-        建立业务专家壁垒
-      真实能力鉴别
-        看简历与文笔
-        问细节与推演
-        查交付物规范
-        观潜力与价值观
+flowchart TD
+    subgraph Part1["第一篇：认知与定位篇"]
+        C1["<b>第1章：什么是产品经理</b><br/>· 产研三环模型 (UX / Tech / Business)<br/>· 三样核心交付物 (Context / POV / Vision)<br/>· 优秀特质与 Stop Doing List<br/>· 真实典型工作日程切片"]
+        C2["<b>第2章：职业发展与核心竞争力</b><br/>· 角色边界 (PM vs 架构 vs 设计 vs 项目)<br/>· 职业天梯与能力冰山模型<br/>· 十年宿命与行业护城河法则<br/>· 顶级产品人才面试鉴别法"]
+    end
+
+    C1 --> C2
+
+    style Part1 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C2 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

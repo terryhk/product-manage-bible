@@ -21,49 +21,19 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第三篇: 需求挖掘与真伪))
-    第5章: 需求发源与核心辨析
-      EMUC 需求发源模型
-        Employees 内部员工与高管
-        Metrics 数据大盘与异常
-        Users C端最终使用者
-        Clients/Customers B端企业客户
-      User vs Customer 冲突化解
-        使用体验 vs 采购决策买单
-        功能分歧与平衡艺术
-    第6章: 需求分析与伪需求粉碎机
-      黄金追问法则
-        连续 3~5 次追问 Why
-        从表面方案下穿到底层痛点
-      伪需求本质剖析
-        无痛点 / 弱痒点
-        缺乏商业闭环支撑
-        人群错位与时机不成熟
-      5W2H 需求定义框架
-        Why / What / Where / When / Who / How / How much
-      经典案例实战拆解
-        以 OFO / 摩拜 为例的需求剖析
-        最后1公里通勤痛点
-        单车折旧与每日骑行盈利模型
-        重资产与运维反思
-    第7章: 客户开发与访谈全套心法
-      Steve Blank 客户开发理念
-        走出大楼 (No facts inside the building)
-        探索 Discovery -> 验证 Validation -> 创造 Creation -> 建设 Building
-      四大类访谈全景
-        探索型 Exploratory (广撒网找痛点)
-        验证型 Validation (极度防偏见测假设)
-        满意度型 Satisfaction (查缺补漏找缺陷)
-        效率型 Efficiency (功能易用性优化)
-      提问黄金守则与避坑
-        开放式提问
-        严禁诱导性与假设性提问
-        不谈解决方案，只谈真实困扰
-      访谈冷启动与邮件话术
-        短小 / 个性化 / 赋予价值 / 非销售身份
-      用户画像 Persona 实操
-        虚拟代表构建与多维标签
+flowchart TD
+    subgraph Part3["第三篇：需求挖掘与真伪篇"]
+        C5["<b>第5章：需求发源与核心辨析</b><br/>· EMUC 四维需求发源模型 (员工/数据/用户/企业客户)<br/>· 使用者 (User) 与买单决策者 (Customer) 冲突化解"]
+        C6["<b>第6章：需求分析与伪需求粉碎机</b><br/>· 连续 3~5 次追问 Why 穿透表象<br/>· 伪需求的四大判定法则与 5W2H 规范<br/>· 以 OFO 共享单车为例的商业闭环推演"]
+        C7["<b>第7章：客户开发与访谈全套心法</b><br/>· Steve Blank 客户开发四阶段模型<br/>· 四大类访谈定位 (探索/验证/满意度/效率)<br/>· 访谈话术模板与高保真用户画像 (Persona)"]
+    end
+
+    C5 --> C6 --> C7
+
+    style Part3 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C5 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C6 fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px;
+    style C7 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

@@ -26,7 +26,7 @@ Scrum 通过严密的节奏律动，帮助跨职能团队将混沌的需求转�
 
 ```mermaid
 flowchart LR
-    PB[Product Backlog<br/>产品全量待办列表<br/>(由 PM 维护排序)] -->|Sprint Planning<br/>冲刺规划会| SB[Sprint Backlog<br/>当前冲刺待办清单<br/>(团队共同承诺)]
+    PB["Product Backlog<br/>产品全量待办列表<br/>(由 PM 维护排序)"] -->|"Sprint Planning<br/>冲刺规划会"| SB["Sprint Backlog<br/>当前冲刺待办清单<br/>(团队共同承诺)"]
     
     SB --> Sprint["2周冲刺开发 (Sprint)<br/>• Daily Standup 每日站会 (15min)<br/>• 阻碍排查与协同"]
     

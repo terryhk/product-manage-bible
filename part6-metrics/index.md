@@ -22,49 +22,19 @@
 ## 本篇知识图谱
 
 ```mermaid
-mindmap
-  root((第六篇: 数据驱动与度量))
-    第16章: 指标体系与度量心智
-      度量哲学
-        反馈回路理论 Feedback Loops
-        无法度量则无法管理
-      指标分类
-        报告型指标 Reporting (长周期/方向把控)
-        探索型指标 Exploratory (短周期/异动归因)
-      优质指标四大黄金特征
-        易于理解 Understandable
-        比率或比值 Rate or Ratio (超越绝对值)
-        具备强相关性 Correlated
-        可被行动改变 Changeable
-      虚荣指标 vs 北极星指标
-        累计注册量 vs 真实活跃转化
-    第17章: HEART 体验度量框架
-      五大核心维度
-        Happiness 幸福感与满意度
-        Engagement 参与度与使用深度
-        Adoption 采纳度与新功能试用
-        Retention 留存率与持续回访
-        Task Success 任务成功率与效率
-      真实体验旅程顺序
-        A.T.E.R.H. (采纳 -> 成功 -> 参与 -> 留存 -> 幸福)
-      GSM 三步映射实操
-        Goals 设定体验目标
-        Signals 识别可测信号
-        Metrics 输出量化指标
-    第18章: AARRR 海盗模型与用户生命周期
-      获取 Acquisition
-        多渠道获客与获客成本 CAC
-      激活 Activation
-        安装 vs 激活的区别
-        Aha Moment 惊喜时刻定位
-      留存 Retention
-        留存用户 vs 复活用户
-        留存衰减曲线与 Cohort 队列分析
-      推荐 Referral
-        病毒传播系数 K-factor & NPS 净推荐值
-      变现 Revenue
-        用户生命周期价值 LTV 测算
-        LTV / CAC 黄金比例法则 (> 3)
+flowchart TD
+    subgraph Part6["第六篇：数据驱动与产品度量篇"]
+        C16["<b>第16章：核心度量框架与指标体系</b><br/>· 度量反馈回路与优质指标四大特征<br/>· 报告型 vs 探索型指标 / 虚荣指标甄别<br/>· 科技巨头北极星指标实战"]
+        C17["<b>第17章：HEART 体验度量模型落地</b><br/>· Google 五维体验度量 (Happiness/Engagement/Adoption/Retention/Task)<br/>· 真实用户旅程 A.T.E.R.H. 逻辑<br/>· GSM 目标-信号-指标量化映射模板"]
+        C18["<b>第18章：AARRR 海盗漏斗与全生命周期</b><br/>· 获取(CAC)与激活(Aha Moment)<br/>· 留存基石(Cohort 队列分析与曲线拉平)<br/>· 推荐(K-factor/NPS)与变现(LTV/CAC > 3)"]
+    end
+
+    C16 --> C17 --> C18
+
+    style Part6 fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style C16 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style C17 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style C18 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ---

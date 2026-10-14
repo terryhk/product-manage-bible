@@ -39,20 +39,17 @@ graph LR
 以下是产研与商业协同中最为高频的硬核术语，每一项背后都对应着严密的工程或财务逻辑：
 
 ```mermaid
-mindmap
-  root((核心行业暗语速查))
-    财务与商业测算
-      Armotized 资产摊销折旧
-      Pro Rata 按比例折算
-      Oversubscribed 资源超额复用
-    生命周期与工程治理
-      Supersede 全面废弃接管
-      Replenishment 自动补仓与扩容
-      Spike 技术探针调研
-    交付与协作约定
-      ETA 预计准确到达时间
-      Dogfooding 吃自己狗粮
-      Blameless Post-mortem 对事不对人复盘
+flowchart TD
+    Root["<b>核心高频行业术语速查 (PM Jargons)</b>"]
+
+    Root --> J1["<b>1. 财务与商业测算</b><br/>· <b>Amortized</b> 成本资产摊销折旧<br/>· <b>Pro Rata</b> 跨周期按比例折算<br/>· <b>Oversubscribed</b> 资源超额复用与超卖"]
+    Root --> J2["<b>2. 研发工程与生命周期</b><br/>· <b>Supersede</b> 新版全面废弃接管旧版<br/>· <b>Replenishment</b> 资源自动补仓扩容<br/>· <b>Spike</b> 技术探针与预研探索"]
+    Root --> J3["<b>3. 交付与跨团队约定</b><br/>· <b>ETA</b> 预计交付到达时间<br/>· <b>Dogfooding</b> 内部全员吃自己狗粮<br/>· <b>Blameless Post-mortem</b> 零指责故障复盘"]
+
+    style Root fill:#0f172a,stroke:#38bdf8,stroke-width:2px,color:#fff;
+    style J1 fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px;
+    style J2 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style J3 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ### 1. Armotized / Amortized（成本摊销 / 资产折旧平摊）

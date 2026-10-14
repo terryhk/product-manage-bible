@@ -64,18 +64,24 @@ graph TD
 不同产品研发阶段，所需要的访谈类型截然不同。千万不要用同一种提问方式贯穿始终：
 
 ```mermaid
-quadrantChart
-    title 四类客户访谈定位全景
-    x-axis "发散探索 (Explorative)" --> "收敛求证 (Evaluative)"
-    y-axis "关注产品现状 (Current Product)" --> "关注原始问题 (Core Problem)"
-    quadrant-1 "验证型访谈 (Validation)"
-    quadrant-2 "探索型访谈 (Exploratory)"
-    quadrant-3 "满意度访谈 (Satisfaction)"
-    quadrant-4 "效率型访谈 (Efficiency)"
-    "产品孵化初期探索": [0.2, 0.8]
-    "商业假设科学验证": [0.8, 0.75]
-    "上线后体验优化": [0.75, 0.25]
-    "版本迭代查漏补缺": [0.3, 0.3]
+flowchart TD
+    subgraph Matrix["四类客户访谈定位全景"]
+        direction TB
+        subgraph TopRow["关注原始本质问题 (Core Problem)"]
+            Q2["<b>探索型访谈 (Exploratory)</b><br/>发散探索未知痛点与真实工作流<br/><i>场景：产品孵化初期无设限定性挖掘</i>"]
+            Q1["<b>验证型访谈 (Validation)</b><br/>针对核心假设与原型收敛求证<br/><i>场景：商业假设与付费意愿科学验证</i>"]
+        end
+        subgraph BottomRow["关注产品落地现状 (Current Product)"]
+            Q3["<b>满意度访谈 (Satisfaction)</b><br/>定性挖掘槽点与流失根因<br/><i>场景：版本上线后用户粘性与体验优化</i>"]
+            Q4["<b>效率型访谈 (Efficiency)</b><br/>基于可用性测试的细粒度行为观察<br/><i>场景：版本迭代流程查漏补缺</i>"]
+        end
+    end
+
+    style Matrix fill:#f8fafc,stroke:#334155,stroke-width:2px;
+    style Q1 fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px;
+    style Q2 fill:#fef3c7,stroke:#d97706,stroke-width:1.5px;
+    style Q3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1.5px;
+    style Q4 fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px;
 ```
 
 ### 1. 探索型访谈（Exploratory Interview）
@@ -109,14 +115,14 @@ graph TD
     Rules --> Good[✅ 黄金提问准则]
     Rules --> Bad[🚨 致命高危禁忌]
 
-    Good --> G1[永远问开放式问题 (Open-ended)]
+    Good --> G1["永远问开放式问题 (Open-ended)"]
     Good --> G2[追溯过去发生的真实事实]
     Good --> G3[倾听占比 > 70%，多引导对方倾诉]
     Good --> G4[遇冷救场神句: '这太有意思了，能多讲讲吗?']
 
     Bad --> B1[严禁提假设性问题: '如果做这个你会买吗?']
     Bad --> B2[严禁提诱导性问题: '你不觉得这样更方便吗?']
-    Bad --> B3[严禁提二元封闭问题 (只能答是/否)]
+    Bad --> B3["严禁提二元封闭问题 (只能答是/否)"]
     Bad --> B4[严禁让用户陷入可能撒谎的尴尬处境]
 ```
 
