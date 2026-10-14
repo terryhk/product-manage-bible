@@ -12,7 +12,7 @@ HEART 框架由 Google 资深用研专家凯莉·罗登（Kerry Rodden）等人�
 
 ```mermaid
 graph TD
-    HEART[Google HEART 体验度量框架]
+    HEART["Google HEART 体验度量框架"]
     HEART --> H["H - 幸福感 Happiness<br/>(用户的满意度、愉悦感与净推荐意愿)"]
     HEART --> E["E - 参与度 Engagement<br/>(用户在短周期内的交互频次与使用深度)"]
     HEART --> A["A - 采纳度 Adoption<br/>(新用户或新功能在指定周期内的首次试用)"]

@@ -11,16 +11,16 @@
 ```mermaid
 flowchart TD
     subgraph Waterfall["传统瀑布模式 (Waterfall)"]
-        W1[全量需求深度分析 Requirements] --> W2[全量系统与架构设计 Design]
-        W2 --> W3[漫长编码阶段 Implementation]
-        W3 --> W4[集中全面测试 Testing]
-        W4 --> W5[最终一次性大爆炸交付 Deployment]
+        W1["全量需求深度分析 Requirements"] --> W2["全量系统与架构设计 Design"]
+        W2 --> W3["漫长编码阶段 Implementation"]
+        W3 --> W4["集中全面测试 Testing"]
+        W4 --> W5["最终一次性大爆炸交付 Deployment"]
     end
 
     subgraph Agile["现代敏捷模式 (Agile)"]
-        A1[规划最核心 2~3 项特性] --> A2[2周快速端到端闭环开发与测试]
-        A2 --> A3[发布上线并获取真实数据]
-        A3 --> A4[依据市场反馈启动下一个迭代 Sprint]
+        A1["规划最核心 2~3 项特性"] --> A2["2周快速端到端闭环开发与测试"]
+        A2 --> A3["发布上线并获取真实数据"]
+        A3 --> A4["依据市场反馈启动下一个迭代 Sprint"]
         A4 --> A1
     end
 ```
@@ -42,16 +42,16 @@ flowchart TD
 
 ```mermaid
 graph TD
-    Waterfall_Fit[瀑布研发模式的不可替代场景]
-    Waterfall_Fit --> C1[1. 现代操作系统内核 Operating Systems]
-    Waterfall_Fit --> C2[2. 航空航天与汽车核心动力引擎 Avionics & ECU]
-    Waterfall_Fit --> C3[3. 建筑摩天大楼与不可逆土建 Civil Engineering]
-    Waterfall_Fit --> C4[4. 重工业与高精度消费硬件模具 Tooling & DFM]
+    Waterfall_Fit["瀑布研发模式的不可替代场景"]
+    Waterfall_Fit --> C1["1. 现代操作系统内核 Operating Systems"]
+    Waterfall_Fit --> C2["2. 航空航天与汽车核心动力引擎 Avionics & ECU"]
+    Waterfall_Fit --> C3["3. 建筑摩天大楼与不可逆土建 Civil Engineering"]
+    Waterfall_Fit --> C4["4. 重工业与高精度消费硬件模具 Tooling & DFM"]
 
-    C1 --- C1_d[系统级调用如果基础未稳，碎片化迭代会导致上层生态全线崩溃]
-    C2 --- C2_d[零容忍任何软件故障，涉及生命安全，必须经过严密的 V字模型验证]
-    C3 --- C3_d[地基一旦浇筑，绝不可能下个月'敏捷重构'把承重墙平移三米]
-    C4 --- C4_d[注塑模具开模成本数十万至上百万，物理成型后无法回滚]
+    C1 --- C1_d["系统级调用如果基础未稳，碎片化迭代会导致上层生态全线崩溃"]
+    C2 --- C2_d["零容忍任何软件故障，涉及生命安全，必须经过严密的 V字模型验证"]
+    C3 --- C3_d["地基一旦浇筑，绝不可能下个月'敏捷重构'把承重墙平移三米"]
+    C4 --- C4_d["注塑模具开模成本数十万至上百万，物理成型后无法回滚"]
 ```
 
 ### 真实案例对比

@@ -12,14 +12,14 @@
 
 ```mermaid
 flowchart TD
-    PM((产品经理 PM<br/>无行政权力的沟通中枢))
+    PM(("产品经理 PM<br/>无行政权力的沟通中枢"))
     
-    PM <-->|逻辑细节 / 技术债防御| Dev[研发工程师 Engineers]
-    PM <-->|用户痛点 / 创意自由| Des[UI/UX 设计师 Designers]
-    PM <-->|业务赋能 / 销售武器库| Sales[销售与市场 Sales & Marketing]
-    PM <-->|简明扼要 / 商业回报 ROI| Exec[高管与直属领导 Executives]
-    PM <-->|合规审查 / 牌照资质| Legal[法务与合规部 Legal]
-    PM <-->|成本核算 / 预算把控| Finance[财务部 Finance]
+    PM <-->|"逻辑细节 / 技术债防御"| Dev["研发工程师 Engineers"]
+    PM <-->|"用户痛点 / 创意自由"| Des["UI/UX 设计师 Designers"]
+    PM <-->|"业务赋能 / 销售武器库"| Sales["销售与市场 Sales & Marketing"]
+    PM <-->|"简明扼要 / 商业回报 ROI"| Exec["高管与直属领导 Executives"]
+    PM <-->|"合规审查 / 牌照资质"| Legal["法务与合规部 Legal"]
+    PM <-->|"成本核算 / 预算把控"| Finance["财务部 Finance"]
 ```
 
 > [!NOTE]
@@ -38,12 +38,12 @@ flowchart TD
 
 ```mermaid
 graph TD
-    EngCollab[与研发工程师协同的五大黄金法则]
-    EngCollab --> E1[1. 极致细节与逻辑闭环 Need Detail]
-    EngCollab --> E2[2. 承担需求缺陷的兜底责任 Accountability]
-    EngCollab --> E3[3. 替研发前置分担脏活累活 Do Dirty Work Upfront]
-    EngCollab --> E4[4. 主动预防与偿还技术债务 Technical Debt]
-    EngCollab --> E5[5. 绝不把技术团队当外包外包对待 No Agency Mentality]
+    EngCollab["与研发工程师协同的五大黄金法则"]
+    EngCollab --> E1["1. 极致细节与逻辑闭环 Need Detail"]
+    EngCollab --> E2["2. 承担需求缺陷的兜底责任 Accountability"]
+    EngCollab --> E3["3. 替研发前置分担脏活累活 Do Dirty Work Upfront"]
+    EngCollab --> E4["4. 主动预防与偿还技术债务 Technical Debt"]
+    EngCollab --> E5["5. 绝不把技术团队当外包外包对待 No Agency Mentality"]
 ```
 
 1. **逻辑自洽，细节制胜（Need Detail）**：
@@ -98,16 +98,16 @@ flowchart LR
 
 ```mermaid
 graph TD
-    Collateral[产品经理赋能销售的四大武器库]
-    Collateral --> C1[1. 产品白皮书 White Papers]
-    Collateral --> C2[2. 常见问题解答 FAQ 知识库]
-    Collateral --> C3[3. 竞品对比一页纸 Battle Cards]
-    Collateral --> C4[4. 标准宣讲 Demo & 客户成功案例]
+    Collateral["产品经理赋能销售的四大武器库"]
+    Collateral --> C1["1. 产品白皮书 White Papers"]
+    Collateral --> C2["2. 常见问题解答 FAQ 知识库"]
+    Collateral --> C3["3. 竞品对比一页纸 Battle Cards"]
+    Collateral --> C4["4. 标准宣讲 Demo & 客户成功案例"]
 
-    C1 --- C1_d[阐述产品底层架构、安全性与合规资质，打消客户采购顾虑]
-    C2 --- C2_d[收录 80% 客户在商务谈判中必问的技术疑难问题与标准话术]
-    C3 --- C3_d[客观列举我方与核心竞品的差异化优势，提供攻防话术]
-    C4 --- C4_d[提供经过脱敏的头部标杆客户 ROI 改善真实案例]
+    C1 --- C1_d["阐述产品底层架构、安全性与合规资质，打消客户采购顾虑"]
+    C2 --- C2_d["收录 80% 客户在商务谈判中必问的技术疑难问题与标准话术"]
+    C3 --- C3_d["客观列举我方与核心竞品的差异化优势，提供攻防话术"]
+    C4 --- C4_d["提供经过脱敏的头部标杆客户 ROI 改善真实案例"]
 ```
 
 - **市场团队发布对齐（Launch Readiness Checklist）**：

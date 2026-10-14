@@ -10,10 +10,10 @@
 
 ```mermaid
 flowchart LR
-    Idea[抽象业务想法] -->|纸笔白板 5分钟| Sketch["手绘草图 (Sketching)<br/>• 极低心智摩擦<br/>• 聚焦核心元素排布"]
-    Sketch -->|低保真工具 1小时| Wireframe["线框图 (Wireframe)<br/>• 明确信息层级与字段<br/>• 梳理交互跳转路径"]
-    Wireframe -->|设计协同 1~2天| Mockup["视觉模型 (Mockup)<br/>• UI/UX 专业美化<br/>• 品牌色彩与排版规范"]
-    Mockup -->|可交互配置| Prototype["交互原型 (Prototype)<br/>• 真实点击与可用性测试"]
+    Idea["抽象业务想法"] -->|"纸笔白板 5分钟"| Sketch["手绘草图 (Sketching)<br/>• 极低心智摩擦<br/>• 聚焦核心元素排布"]
+    Sketch -->|"低保真工具 1小时"| Wireframe["线框图 (Wireframe)<br/>• 明确信息层级与字段<br/>• 梳理交互跳转路径"]
+    Wireframe -->|"设计协同 1~2天"| Mockup["视觉模型 (Mockup)<br/>• UI/UX 专业美化<br/>• 品牌色彩与排版规范"]
+    Mockup -->|"可交互配置"| Prototype["交互原型 (Prototype)<br/>• 真实点击与可用性测试"]
 ```
 
 ![Sketching Concept](../assets/images/sketching-concept.png)
@@ -64,11 +64,11 @@ graph TD
 
 ```mermaid
 graph LR
-    Tools[主流原型工具生态]
-    Tools --> T_Low[低保真快速线框]
-    Tools --> T_Collab[现代云端协同设计]
-    Tools --> T_Complex[复杂高保真与条件逻辑]
-    Tools --> T_Inspiration[灵感与设计模式库]
+    Tools["主流原型工具生态"]
+    Tools --> T_Low["低保真快速线框"]
+    Tools --> T_Collab["现代云端协同设计"]
+    Tools --> T_Complex["复杂高保真与条件逻辑"]
+    Tools --> T_Inspiration["灵感与设计模式库"]
 
     T_Low --- TL1["Balsamiq / 墨刀 (手绘风格、极度克制、拒绝过度设计)"]
     T_Collab --- TC1["Figma (当今全球产研协同首选、多方实时批注)"]

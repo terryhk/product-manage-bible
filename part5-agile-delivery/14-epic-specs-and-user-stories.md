@@ -35,16 +35,16 @@ flowchart TD
 
 ```mermaid
 graph TD
-    EpicSpec[Epic 规格说明书四大核心板块]
-    EpicSpec --> S1[1. 简介板块 Introduction]
-    EpicSpec --> S2[2. 产品需求板块 Product Requirements]
-    EpicSpec --> S3[3. 设计要求板块 Design Requirements]
-    EpicSpec --> S4[4. 工程要求板块 Engineering Requirements]
+    EpicSpec["Epic 规格说明书四大核心板块"]
+    EpicSpec --> S1["1. 简介板块 Introduction"]
+    EpicSpec --> S2["2. 产品需求板块 Product Requirements"]
+    EpicSpec --> S3["3. 设计要求板块 Design Requirements"]
+    EpicSpec --> S4["4. 工程要求板块 Engineering Requirements"]
 
-    S1 --- S1_d[PM 独立主笔: 背景、解决什么问题、影响哪些KPI指标、外部链接]
-    S2 --- S2_d[PM 核心主笔: 完整功能清单、业务规则、输入输出约束、权限边界]
-    S3 --- S3_d[PM 与设计协同: 交互流程图、线框图、Figma 高保真设计稿链接]
-    S4 --- S4_d[架构师与研发主笔: 接口协议、数据库设计、并发性能要求、技术债防范]
+    S1 --- S1_d["PM 独立主笔: 背景、解决什么问题、影响哪些KPI指标、外部链接"]
+    S2 --- S2_d["PM 核心主笔: 完整功能清单、业务规则、输入输出约束、权限边界"]
+    S3 --- S3_d["PM 与设计协同: 交互流程图、线框图、Figma 高保真设计稿链接"]
+    S4 --- S4_d["架构师与研发主笔: 接口协议、数据库设计、并发性能要求、技术债防范"]
 ```
 
 ### Epic 规格说明书工程模板

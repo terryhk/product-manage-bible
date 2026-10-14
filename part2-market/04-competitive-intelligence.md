@@ -10,13 +10,13 @@
 
 ```mermaid
 graph TD
-    Search[发现隐藏竞品的三大情报搜索术]
-    Search --> S1[1. 置身用户吐槽现场 Channel the User]
-    Search --> S2[2. 垂直社群穿透检索 Site: Operator]
-    Search --> S3[3. 核心卖点双引号精准轰炸 Exact Pitch Phrase]
+    Search["发现隐藏竞品的三大情报搜索术"]
+    Search --> S1["1. 置身用户吐槽现场 Channel the User"]
+    Search --> S2["2. 垂直社群穿透检索 Site: Operator"]
+    Search --> S3["3. 核心卖点双引号精准轰炸 Exact Pitch Phrase"]
 
     S1 --- S1_d["在搜索框输入用户具体的抱怨语句，例如: '为什么某某软件不能同时导出PDF'"]
-    S2 --- S2_d["'site:v2ex.com [问题痛点]' 或 'site:reddit.com [诉求]' 挖掘自发讨论"]
+    S2 --- S2_d["''site:v2ex.com [问题痛点"]' 或 'site:reddit.com [诉求]' 挖掘自发讨论"]
     S3 --- S3_d["用双引号搜索产品一句话 Pitch，看谁打出了完全相同的口号"]
 ```
 
@@ -78,12 +78,12 @@ flowchart TD
 
 ```mermaid
 graph LR
-    Eval[对手综合实力评估五大黄金维度]
-    Eval --> D1[1. 产品核心团队 Product Core]
-    Eval --> D2[2. 用户规模与网络效应 Size]
-    Eval --> D3[3. 设计审美与交互体验 Design]
-    Eval --> D4[4. 品牌忠诚度与溢价 Brand]
-    Eval --> D5[5. 组织迭代与决策速度 Speed]
+    Eval["对手综合实力评估五大黄金维度"]
+    Eval --> D1["1. 产品核心团队 Product Core"]
+    Eval --> D2["2. 用户规模与网络效应 Size"]
+    Eval --> D3["3. 设计审美与交互体验 Design"]
+    Eval --> D4["4. 品牌忠诚度与溢价 Brand"]
+    Eval --> D5["5. 组织迭代与决策速度 Speed"]
 ```
 
 1. **产品核心团队（The Product Core）**：
@@ -131,15 +131,15 @@ graph LR
 
 ```mermaid
 flowchart LR
-    Radar[竞品情报雷达系统] --> C1[资本维度<br/>Crunchbase / IT桔子]
-    Radar --> C2[人才与组织<br/>LinkedIn / 招聘公告]
-    Radar --> C3[版本与特性<br/>Google Alerts / 提交日志]
-    Radar --> C4[跨界交叉学习<br/>跨领域体验与迁移]
+    Radar["竞品情报雷达系统"] --> C1["资本维度<br/>Crunchbase / IT桔子"]
+    Radar --> C2["人才与组织<br/>LinkedIn / 招聘公告"]
+    Radar --> C3["版本与特性<br/>Google Alerts / 提交日志"]
+    Radar --> C4["跨界交叉学习<br/>跨领域体验与迁移"]
 
-    C1 --> O1[捕捉融资轮次、估值、新股东战略资源]
-    C2 --> O2[监测关键高管跳槽、大规模扩招的技术方向]
-    C3 --> O3[第一时间测试体验竞品新功能，解构其意图]
-    C4 --> O4[从电商/社交向工具软件反哺设计灵感]
+    C1 --> O1["捕捉融资轮次、估值、新股东战略资源"]
+    C2 --> O2["监测关键高管跳槽、大规模扩招的技术方向"]
+    C3 --> O3["第一时间测试体验竞品新功能，解构其意图"]
+    C4 --> O4["从电商/社交向工具软件反哺设计灵感"]
 ```
 
 1. **资本与融资动态（Funding & Crunchbase）**：

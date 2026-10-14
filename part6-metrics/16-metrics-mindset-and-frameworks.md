@@ -12,9 +12,9 @@
 
 ```mermaid
 flowchart LR
-    Action[产品优化动作 / 代码发布] --> Metric[指标大盘与用户行为数据]
-    Metric -->|高频、高精度的客观反馈| Insight[洞察因果规律与业务偏差]
-    Insight -->|敏捷纠偏与优化决策| Action
+    Action["产品优化动作 / 代码发布"] --> Metric["指标大盘与用户行为数据"]
+    Metric -->|"高频、高精度的客观反馈"| Insight["洞察因果规律与业务偏差"]
+    Insight -->|"敏捷纠偏与优化决策"| Action
 ```
 
 ### 为什么反馈的“频次”与“精度”至关重要？
@@ -32,9 +32,9 @@ flowchart LR
 
 ```mermaid
 graph TD
-    MetricsCategory[产品数据指标双重分类]
-    MetricsCategory --> Reporting[报告型指标 Reporting Metrics]
-    MetricsCategory --> Exploratory[探索型指标 Exploratory Metrics]
+    MetricsCategory["产品数据指标双重分类"]
+    MetricsCategory --> Reporting["报告型指标 Reporting Metrics"]
+    MetricsCategory --> Exploratory["探索型指标 Exploratory Metrics"]
 
     Reporting --- R_d["• 长期跟踪 (按周/月/季度)<br/>• 宏观战略对齐与北极星指标<br/>• 确保产品始终朝着正确的大方向航行"]
     Exploratory --- E_d["• 敏捷深潜 (临时查询与异动归因)<br/>• 微观行为洞察与漏斗排查<br/>• 挖掘未被察觉的业务新机会与技术摩擦"]
@@ -58,11 +58,11 @@ graph TD
 
 ```mermaid
 graph LR
-    GoodMetric[优质指标四大黄金特征]
-    GoodMetric --> C1[1. 易于理解 Understandable]
-    GoodMetric --> C2[2. 比率或比值 Rate or Ratio]
-    GoodMetric --> C3[3. 强相关性 Correlated]
-    GoodMetric --> C4[4. 可被行动改变 Changeable]
+    GoodMetric["优质指标四大黄金特征"]
+    GoodMetric --> C1["1. 易于理解 Understandable"]
+    GoodMetric --> C2["2. 比率或比值 Rate or Ratio"]
+    GoodMetric --> C3["3. 强相关性 Correlated"]
+    GoodMetric --> C4["4. 可被行动改变 Changeable"]
 ```
 
 1. **易于理解（Understandable）**：
@@ -102,10 +102,10 @@ graph LR
 
 ```mermaid
 graph TD
-    Companies[硅谷科技巨头指标设计维度]
-    Companies --> TW[Twitter: 社交媒体网络]
-    Companies --> YT[YouTube: 长短视频内容流]
-    Companies --> FB[Facebook: 社交网络帝国]
+    Companies["硅谷科技巨头指标设计维度"]
+    Companies --> TW["Twitter: 社交媒体网络"]
+    Companies --> YT["YouTube: 长短视频内容流"]
+    Companies --> FB["Facebook: 社交网络帝国"]
 
     TW --- TW_d["• 增长: 月度新增激活用户 (Activated Users)<br/>• 参与度: 人均每日登录频次、日均发推数、互动数 (Retweet/Like)"]
     YT --- YT_d["• 增长: 播放器活跃设备数<br/>• 参与度: 人均视频观看总时长 (Watch Time)、完播率、推荐点击率"]

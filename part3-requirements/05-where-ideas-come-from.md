@@ -10,16 +10,16 @@
 
 ```mermaid
 graph TD
-    EMUC[需求四大发源地: EMUC 模型]
-    EMUC --> E[Employees 内部员工与高管]
-    EMUC --> M[Metrics 数据大盘与异常]
-    EMUC --> U[Users 终端最终使用者]
-    EMUC --> C[Clients / Customers 企业买单客户]
+    EMUC["需求四大发源地: EMUC 模型"]
+    EMUC --> E["Employees 内部员工与高管"]
+    EMUC --> M["Metrics 数据大盘与异常"]
+    EMUC --> U["Users 终端最终使用者"]
+    EMUC --> C["Clients / Customers 企业买单客户"]
 
-    E --- E_d[同事建议、跨部门诉求、老板战略输入、自我灵感]
-    M --- M_d[漏斗断裂、流失预警、转化瓶颈、操作低效]
-    U --- U_d[论坛反馈、应用商店评论、客服工单、社交吐槽]
-    C --- C_d[B端采购要求、招投标规格、商务签约前置条件]
+    E --- E_d["同事建议、跨部门诉求、老板战略输入、自我灵感"]
+    M --- M_d["漏斗断裂、流失预警、转化瓶颈、操作低效"]
+    U --- U_d["论坛反馈、应用商店评论、客服工单、社交吐槽"]
+    C --- C_d["B端采购要求、招投标规格、商务签约前置条件"]
 ```
 
 ### EMUC 四大源头深度解析
@@ -46,15 +46,15 @@ graph TD
 ```mermaid
 flowchart LR
     subgraph InternalPM["内部系统 PM (Internal PM)"]
-        IPM[主要面向内部员工/业务部门<br/>如: 内部 OA、ERP、客服工作台] --> IR1[主要输入源: Employees & Metrics]
+        IPM["主要面向内部员工/业务部门<br/>如: 内部 OA、ERP、客服工作台"] --> IR1["主要输入源: Employees & Metrics"]
     end
 
     subgraph ConsumerPM["C端消费级 PM (Consumer PM)"]
-        CPM[面向海量大众个人消费者<br/>如: 微信、抖音、工具 App] --> CR1[主要输入源: Users & Metrics]
+        CPM["面向海量大众个人消费者<br/>如: 微信、抖音、工具 App"] --> CR1["主要输入源: Users & Metrics"]
     end
 
     subgraph B2BPM["ToB 企业级 PM (B2B PM)"]
-        BPM[面向外部企业客户与组织机构<br/>如: Salesforce、阿里云、飞书] --> BR1[主要输入源: Clients & Employees]
+        BPM["面向外部企业客户与组织机构<br/>如: Salesforce、阿里云、飞书"] --> BR1["主要输入源: Clients & Employees"]
     end
 ```
 
@@ -81,7 +81,7 @@ graph LR
         Customer["买单者 (Customer / Client)<br/>• 拥有采购审批权的企业高管 / CIO<br/>• 核心关注: 严密审计、数据安全、层级管控、降本增效、ROI"]
     end
 
-    User <-->|利益与体验博弈| Customer
+    User <-->|"利益与体验博弈"| Customer
 ```
 
 ### 双重角色的核心分歧对比
@@ -111,14 +111,14 @@ graph LR
 
 ```mermaid
 flowchart TD
-    Idea[收到一个新想法 / 需求输入] --> Q1{1. 它是否对齐团队的核心目标或愿景？}
-    Q1 -- 否 --> Drop[礼貌归档 / 延期考量]
-    Q1 -- 是 --> Q2{2. 解决的是致命痛点还是可有可无的痒点？}
-    Q2 -- 痒点 --> Deprioritize[降低优先级]
-    Q2 -- 痛点 --> Q3{3. 能否给核心指标带来显著提升 (如至少提升20%以上)？}
-    Q3 -- 否 --> Evaluate[评估开发成本 vs 收益]
-    Q3 -- 是 --> Q4{4. 商业回报是否显著大于研发与运营投入？}
-    Q4 -- 是 --> Backlog[纳入 Product Backlog 进入深度推演]
+    Idea["收到一个新想法 / 需求输入"] --> Q1{"1. 它是否对齐团队的核心目标或愿景？"}
+    Q1 -- 否 --> Drop["礼貌归档 / 延期考量"]
+    Q1 -- 是 --> Q2{"2. 解决的是致命痛点还是可有可无的痒点？"}
+    Q2 -- 痒点 --> Deprioritize["降低优先级"]
+    Q2 -- 痛点 --> Q3{"3. 能否给核心指标带来显著提升 (如至少提升20%以上)？"}
+    Q3 -- 否 --> Evaluate["评估开发成本 vs 收益"]
+    Q3 -- 是 --> Q4{"4. 商业回报是否显著大于研发与运营投入？"}
+    Q4 -- 是 --> Backlog["纳入 Product Backlog 进入深度推演"]
     Q4 -- 否 --> Drop
 ```
 

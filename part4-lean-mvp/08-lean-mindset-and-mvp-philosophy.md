@@ -15,10 +15,10 @@
 
 ```mermaid
 flowchart TD
-    Idea["想法 / 商业假设<br/>(Ideas / Hypotheses)"] -->|构建 Build| Product["最小可行特性<br/>(Code / MVP)"]
-    Product -->|度量 Measure| Data["真实用户行为数据<br/>(Quantitative & Qualitative Data)"]
-    Data -->|学习 Learn| Insights["经证实的认知<br/>(Validated Learning)"]
-    Insights -->|加速下一轮迭代 Repeat| Idea
+    Idea["想法 / 商业假设<br/>(Ideas / Hypotheses)"] -->|"构建 Build"| Product["最小可行特性<br/>(Code / MVP)"]
+    Product -->|"度量 Measure"| Data["真实用户行为数据<br/>(Quantitative & Qualitative Data)"]
+    Data -->|"学习 Learn"| Insights["经证实的认知<br/>(Validated Learning)"]
+    Insights -->|"加速下一轮迭代 Repeat"| Idea
 ```
 
 ![Build-Measure-Learn Feedback Loop](../assets/images/build-measure-learn-loop.png)
@@ -100,7 +100,7 @@ flowchart TD
 
 ```mermaid
 graph TD
-    MVP[MVP 的本质属性]
+    MVP["MVP 的本质属性"]
     MVP --> M1["MVP 是一个流程 (A Process, not just a thing)"]
     MVP --> M2["MVP 的核心在于验证关键假设 (Test Hypotheses)"]
     MVP --> M3["MVP 的核心使命在于对冲商业风险 (Mitigate Risk)"]

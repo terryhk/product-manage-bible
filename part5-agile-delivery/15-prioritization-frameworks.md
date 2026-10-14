@@ -14,7 +14,7 @@
 
 ```mermaid
 graph TD
-    Prioritization[四大主流优先级决策模型库]
+    Prioritization["四大主流优先级决策模型库"]
     Prioritization --> M1["1. Kano 满意度双轴模型 (洞察用户情感需求)"]
     Prioritization --> M2["2. BUC 商业投入产出模型 (量化打分排序)"]
     Prioritization --> M3["3. MoSCoW 范围四分法 (版本边界死线管控)"]
@@ -65,10 +65,10 @@ graph TD
 
 ```mermaid
 flowchart LR
-    BB["商业收益 Business Benefits<br/>(1 ~ 10 分)"] --> Plus((+))
+    BB["商业收益 Business Benefits<br/>(1 ~ 10 分)"] --> Plus(("+"))
     UB["用户收益 User Benefits<br/>(1 ~ 10 分)"] --> Plus
     Plus --> Sum["总价值收益 (0 ~ 20 分)"]
-    Sum --> Minus((—))
+    Sum --> Minus(("—"))
     Cost["研发与运营成本 Cost<br/>(1 ~ 10 分)"] --> Minus
     Minus --> Score["BUC 最终综合得分<br/>(按得分自上而下排期)"]
 ```
@@ -95,7 +95,7 @@ $$\text{BUC 得分} = \text{商业收益 (Business)} + \text{用户收益 (User)
 
 ```mermaid
 graph TD
-    MoSCoW[MoSCoW 范围四分法]
+    MoSCoW["MoSCoW 范围四分法"]
     MoSCoW --> M["Must 必须做 (不可妥协的核心底线, 占工作量 ~60%)"]
     MoSCoW --> S["Should 应该做 (极其重要, 短期内有临时替代解法, ~20%)"]
     MoSCoW --> C["Could 可以做 (锦上添花, 资源有多余时再做, ~20%)"]
@@ -121,12 +121,12 @@ graph TD
 
 ```mermaid
 flowchart TD
-    Idea[新战略业务想法] --> Q1{1. Is it REAL?<br/>需求真实吗? 市场真实存在吗?}
-    Q1 -- 否 (伪需求/不可行) --> Drop[放弃]
-    Q1 -- 是 --> Q2{2. Can we WIN?<br/>我们能赢吗? 有比较优势与壁垒吗?}
+    Idea["新战略业务想法"] --> Q1{"1. Is it REAL?<br/>需求真实吗? 市场真实存在吗?"}
+    Q1 -- 否 (伪需求/不可行) --> Drop["放弃"]
+    Q1 -- 是 --> Q2{"2. Can we WIN?<br/>我们能赢吗? 有比较优势与壁垒吗?"}
     Q2 -- 否 (巨头必胜赛道) --> Drop
-    Q2 -- 是 --> Q3{3. Is it WORTH doing?<br/>值得做吗? ROI足够高且符合愿景吗?}
-    Q3 -- 是 --> Invest[立项，集中资源打穿!]
+    Q2 -- 是 --> Q3{"3. Is it WORTH doing?<br/>值得做吗? ROI足够高且符合愿景吗?"}
+    Q3 -- 是 --> Invest["立项，集中资源打穿!"]
     Q3 -- 否 (不划算/利薄) --> Drop
 ```
 

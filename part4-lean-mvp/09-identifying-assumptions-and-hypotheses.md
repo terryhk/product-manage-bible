@@ -14,7 +14,7 @@
 ```mermaid
 graph LR
     Self["认知自恋陷阱<br/>'用户一定会喜欢这个功能'<br/>'市场上绝对没人做过'<br/>'上线后肯定能赚大钱'"]
-    -->|精益禅模式清洗|
+    -->|"精益禅模式清洗"|
     Zen["科学怀疑态度 (Lean Zen)<br/>'我们其实什么都不知道'<br/>'这只是团队的一条未验证假设'<br/>'我们必须设计实验来证伪它'"]
 ```
 
@@ -115,11 +115,11 @@ flowchart TD
 
 ```mermaid
 graph TD
-    A[粗糙假设 Assumption] -->|精细化规范翻译| B[科学可测假说 Hypothesis]
-    B --> C1[明确目标受众 Target Group]
-    B --> C2[预测具体行动 Predicted Action]
-    B --> C3[归因底层理由 Reason / Value]
-    B --> C4[绑定度量指标 Metric Threshold]
+    A["粗糙假设 Assumption"] -->|"精细化规范翻译"| B["科学可测假说 Hypothesis"]
+    B --> C1["明确目标受众 Target Group"]
+    B --> C2["预测具体行动 Predicted Action"]
+    B --> C3["归因底层理由 Reason / Value"]
+    B --> C4["绑定度量指标 Metric Threshold"]
 ```
 
 ### 假说编写三大标准句式

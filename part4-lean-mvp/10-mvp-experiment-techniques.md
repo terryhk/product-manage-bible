@@ -55,13 +55,13 @@ $$\text{实验总成本} = \text{人力研发成本} + \text{直接营销费用}
 
 ```mermaid
 graph TD
-    MVP_Types[六大经典 MVP 实验技法]
-    MVP_Types --> T1[1. 邮件 MVP<br/>Email-based MVP]
-    MVP_Types --> T2[2. 影子按钮 MVP<br/>Shadow Button MVP]
-    MVP_Types --> T3[3. 404 / 敬请期待预售落地页<br/>Fake Landing Page]
-    MVP_Types --> T4[4. 演示视频 MVP<br/>Explainer Video MVP]
-    MVP_Types --> T5[5. 拼装组合式 MVP<br/>Piecemeal MVP]
-    MVP_Types --> T6[6. 绿野仙踪 / 礼宾服务<br/>Wizard of Oz / Concierge]
+    MVP_Types["六大经典 MVP 实验技法"]
+    MVP_Types --> T1["1. 邮件 MVP<br/>Email-based MVP"]
+    MVP_Types --> T2["2. 影子按钮 MVP<br/>Shadow Button MVP"]
+    MVP_Types --> T3["3. 404 / 敬请期待预售落地页<br/>Fake Landing Page"]
+    MVP_Types --> T4["4. 演示视频 MVP<br/>Explainer Video MVP"]
+    MVP_Types --> T5["5. 拼装组合式 MVP<br/>Piecemeal MVP"]
+    MVP_Types --> T6["6. 绿野仙踪 / 礼宾服务<br/>Wizard of Oz / Concierge"]
 ```
 
 ---
@@ -129,10 +129,10 @@ graph TD
 
 ```mermaid
 graph TD
-    Result[收集到完整的定量与定性实验数据]
-    Result --> Branch1{达到或超出 MCS 最小成功阈值}
-    Result --> Branch2{远低于 MCS 阈值, 数据惨淡}
-    Result --> Branch3{介于临界线之间, 部分有亮点}
+    Result["收集到完整的定量与定性实验数据"]
+    Result --> Branch1{"达到或超出 MCS 最小成功阈值"}
+    Result --> Branch2{"远低于 MCS 阈值, 数据惨淡"}
+    Result --> Branch3{"介于临界线之间, 部分有亮点"}
 
     Branch1 --> Action1["【全面推进 GO】<br/>编写正式 PRD，调集研发力量进入正规军作战！"]
     Branch2 --> Action2["【果断止损 KILL】<br/>终止该方向探索，为团队省下数月无谓消耗，开香槟庆祝成功避坑！"]

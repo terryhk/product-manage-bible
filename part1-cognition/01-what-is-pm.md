@@ -39,7 +39,7 @@ flowchart TD
         TECH["工程技术 (Technology)<br/>• 研发团队 / 架构设计<br/>• 可行性、稳定性与性能"]
     end
     
-    UX --- PM((产品经理 PM<br/>决策与平衡中枢))
+    UX --- PM(("产品经理 PM<br/>决策与平衡中枢"))
     BUS --- PM
     TECH --- PM
 
@@ -73,13 +73,13 @@ flowchart TD
 
 ```mermaid
 graph LR
-    A[产品经理的三大输出] --> B[1. 情境 Context]
-    A --> C[2. 观点 Point of View]
-    A --> D[3. 愿景 Vision]
+    A["产品经理的三大输出"] --> B["1. 情境 Context"]
+    A --> C["2. 观点 Point of View"]
+    A --> D["3. 愿景 Vision"]
     
-    B --> B1[真实用户与市场痛点的场景化描述]
-    C --> C1[当前方案是否能低成本、高效率解决问题]
-    D --> D1[描绘产品成功的可能性，凝聚团队心力]
+    B --> B1["真实用户与市场痛点的场景化描述"]
+    C --> C1["当前方案是否能低成本、高效率解决问题"]
+    D --> D1["描绘产品成功的可能性，凝聚团队心力"]
 ```
 
 1. **情境（Context）**：
@@ -140,18 +140,18 @@ flowchart TD
 
 ```mermaid
 graph TD
-    Traits[优秀产品经理特质模型]
-    Traits --> T1[好奇心 Curiosity]
-    Traits --> T2[同理心 Empathy]
-    Traits --> T3[理性 Rationality]
-    Traits --> T4[勇于说不 Courage to Say No]
-    Traits --> T5[跨界通才 Generalist]
+    Traits["优秀产品经理特质模型"]
+    Traits --> T1["好奇心 Curiosity"]
+    Traits --> T2["同理心 Empathy"]
+    Traits --> T3["理性 Rationality"]
+    Traits --> T4["勇于说不 Courage to Say No"]
+    Traits --> T5["跨界通才 Generalist"]
 
-    T1 --- T1_d[好学、从失败中复盘、捕捉隐匿机会]
-    T2 --- T2_d[放下傲慢、感知非理性、与用户建立连接]
-    T3 --- T3_d[用数据说话、接受负面批评、抗压迭代]
-    T4 --- T4_d[坚决、有礼貌、毫不含蓄地拒绝噪音需求]
-    T5 --- T5_d[具备商业、技术、审美的多维度通识语境]
+    T1 --- T1_d["好学、从失败中复盘、捕捉隐匿机会"]
+    T2 --- T2_d["放下傲慢、感知非理性、与用户建立连接"]
+    T3 --- T3_d["用数据说话、接受负面批评、抗压迭代"]
+    T4 --- T4_d["坚决、有礼貌、毫不含蓄地拒绝噪音需求"]
+    T5 --- T5_d["具备商业、技术、审美的多维度通识语境"]
 ```
 
 1. **好奇心（Curiosity）**：

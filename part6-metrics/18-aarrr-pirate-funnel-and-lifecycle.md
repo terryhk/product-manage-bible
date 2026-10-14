@@ -25,7 +25,7 @@ flowchart TD
 ```mermaid
 graph LR
     Install["单纯安装用户 (Installed)<br/>• 用户下载了 App 或打开了网页<br/>• 尚未体验到任何核心业务价值<br/>• 3天内流失率通常高达 80%~90%"]
-    -->|经历 Aha Moment / 完成首个核心动作|
+    -->|"经历 Aha Moment / 完成首个核心动作"|
     Active["真正激活用户 (Activated)<br/>• 跨越了认知摩擦门槛<br/>• 亲身体验到了核心解决痛点的爽点<br/>• 长期留存率提升 3~5 倍以上"]
 ```
 
@@ -78,7 +78,7 @@ flowchart TD
 ```mermaid
 flowchart LR
     CAC["单个获客成本 (CAC)<br/>Customer Acquisition Cost<br/>(总市场销售费用 / 获取新客数)"]
-    <-->|黄金对比比例|
+    <-->|"黄金对比比例"|
     LTV["单个用户生命周期总价值 (LTV)<br/>Customer Lifetime Value<br/>(单客在全生命周期贡献的净毛利总和)"]
 ```
 
@@ -103,10 +103,10 @@ $$\text{健康度指标} = \frac{\text{LTV（单客生命周期价值）}}{\text
 
 ```mermaid
 graph TD
-    Tools[现代数据分析工具链全景]
-    Tools --> T_Hub[1. 数据集线器与事件中枢 Data Hub]
-    Tools --> T_Analytics[2. 用户行为与漏斗分析 Analytics]
-    Tools --> T_Heatmap[3. 点击热力图与会话录屏 UX Replay]
+    Tools["现代数据分析工具链全景"]
+    Tools --> T_Hub["1. 数据集线器与事件中枢 Data Hub"]
+    Tools --> T_Analytics["2. 用户行为与漏斗分析 Analytics"]
+    Tools --> T_Heatmap["3. 点击热力图与会话录屏 UX Replay"]
 
     T_Hub --- TH1["Segment / RudderStack<br/>• 一次埋点，多端自动路由<br/>• 统一派发至分析、广告与 CRM"]
     T_Analytics --- TA1["Mixpanel / Amplitude / 神策数据<br/>• 事件级别精细化下钻<br/>• 留存 Cohort、多步转化漏斗、用户行为路径"]

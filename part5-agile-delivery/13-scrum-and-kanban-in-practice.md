@@ -10,9 +10,9 @@
 
 ```mermaid
 graph TD
-    AgileFrameworks[敏捷交付两大主流框架]
-    AgileFrameworks --> Scrum[Scrum 框架]
-    AgileFrameworks --> Kanban[看板 Kanban 框架]
+    AgileFrameworks["敏捷交付两大主流框架"]
+    AgileFrameworks --> Scrum["Scrum 框架"]
+    AgileFrameworks --> Kanban["看板 Kanban 框架"]
 
     Scrum --- S_d["• 强节奏感 (固定 2 周 Sprint)<br/>• 严格仪式 (规划会/站会/评审/回顾)<br/>• 适合特性密集型、版本规划明确的业务"]
     Kanban --- K_d["• 持续流动 (无固定冲刺周期)<br/>• 严格限制在制品 (WIP Limit)<br/>• 适合运维支持、Bug修复与需求持续到达的团队"]
@@ -30,11 +30,11 @@ flowchart LR
     
     SB --> Sprint["2周冲刺开发 (Sprint)<br/>• Daily Standup 每日站会 (15min)<br/>• 阻碍排查与协同"]
     
-    Sprint --> Inc[Potentially Shippable Increment<br/>可独立交付的产品增量]
+    Sprint --> Inc["Potentially Shippable Increment<br/>可独立交付的产品增量"]
     
-    Inc --> Review[Sprint Review 评审会<br/>Demo 演示与收集业务反馈]
-    Review --> Retro[Sprint Retrospective 回顾会<br/>团队内部复盘与流程改进]
-    Retro -->|沉淀改进项| PB
+    Inc --> Review["Sprint Review 评审会<br/>Demo 演示与收集业务反馈"]
+    Review --> Retro["Sprint Retrospective 回顾会<br/>团队内部复盘与流程改进"]
+    Retro -->|"沉淀改进项"| PB
 ```
 
 ![Sprint Board Flow](../assets/images/sprint-board-flow.png)
@@ -54,11 +54,11 @@ flowchart LR
 
 ```mermaid
 graph LR
-    Ceremony[Scrum 四大核心仪式]
-    Ceremony --> C1[1. 冲刺规划会 Sprint Planning]
-    Ceremony --> C2[2. 每日站会 Daily Standup]
-    Ceremony --> C3[3. 冲刺评审会 Sprint Review]
-    Ceremony --> C4[4. 冲刺回顾会 Sprint Retrospective]
+    Ceremony["Scrum 四大核心仪式"]
+    Ceremony --> C1["1. 冲刺规划会 Sprint Planning"]
+    Ceremony --> C2["2. 每日站会 Daily Standup"]
+    Ceremony --> C3["3. 冲刺评审会 Sprint Review"]
+    Ceremony --> C4["4. 冲刺回顾会 Sprint Retrospective"]
 ```
 
 ![Daily Standup Meeting](../assets/images/standup-meeting-photo.png)
@@ -128,9 +128,9 @@ flowchart LR
 
 ```mermaid
 graph TD
-    Estimate[科学敏捷估算两步法]
-    Estimate --> Step1[步骤 1: 用故事点度量'相对复杂度']
-    Estimate --> Step2[步骤 2: 用历史速率推算'确定性排期']
+    Estimate["科学敏捷估算两步法"]
+    Estimate --> Step1["步骤 1: 用故事点度量'相对复杂度'"]
+    Estimate --> Step2["步骤 2: 用历史速率推算'确定性排期'"]
 
     Step1 --- S1_d["采用斐波那契数列 (1, 2, 3, 5, 8, 13)<br/>锚定基准故事: 极简单点任务记为 1 点<br/>综合考虑业务复杂度、技术不确定性与风险"]
     Step2 --- S2_d["统计团队在一个 2周 Sprint 内稳定消耗的点数 (如 25点)<br/>总点数 100 点 / 速率 25点 = 确定需要 4个 Sprint (8周)"]

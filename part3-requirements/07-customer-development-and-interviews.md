@@ -14,7 +14,7 @@
 ```mermaid
 flowchart LR
     CD1["1. 客户探索<br/>Customer Discovery<br/>• 验证痛点是否存在<br/>• 提出初步商业假设"] --> CD2["2. 客户验证<br/>Customer Validation<br/>• 验证商业模式可复制<br/>• 赢得首批付费灯塔客户"]
-    CD2 -->|验证失败则快速回转 Pivot| CD1
+    CD2 -->|"验证失败则快速回转 Pivot"| CD1
     CD2 --> CD3["3. 客户创造<br/>Customer Creation<br/>• 启动规模化获客<br/>• 激发末端最终需求"]
     CD3 --> CD4["4. 组织建设<br/>Company Building<br/>• 正式建立职能部门<br/>• 转向成熟期规模化运作"]
 ```
@@ -41,14 +41,14 @@ flowchart LR
 
 ```mermaid
 graph TD
-    Criteria[种子访谈客群筛选三大维度]
-    Criteria --> C1[1. 市场规模基数 Size]
-    Criteria --> C2[2. 痛点与付费意愿比 Pain:Payment Ratio]
-    Criteria --> C3[3. 触达难易度 Accessibility]
+    Criteria["种子访谈客群筛选三大维度"]
+    Criteria --> C1["1. 市场规模基数 Size"]
+    Criteria --> C2["2. 痛点与付费意愿比 Pain:Payment Ratio"]
+    Criteria --> C3["3. 触达难易度 Accessibility"]
 
-    C1 --- C1_d[该群体在全社会的总体规模是否足够大]
-    C2 --- C2_d[痛点是否极其剧烈，且愿意付出高昂代价解决]
-    C3 --- C3_d[PM 能否在 1~2 周内低成本联系上该群体]
+    C1 --- C1_d["该群体在全社会的总体规模是否足够大"]
+    C2 --- C2_d["痛点是否极其剧烈，且愿意付出高昂代价解决"]
+    C3 --- C3_d["PM 能否在 1~2 周内低成本联系上该群体"]
 ```
 
 ![Target Group Scoring Table](../assets/images/target-group-scoring-table.png)
@@ -111,19 +111,19 @@ flowchart TD
 
 ```mermaid
 graph TD
-    Rules[客户访谈提问守则]
-    Rules --> Good[✅ 黄金提问准则]
-    Rules --> Bad[🚨 致命高危禁忌]
+    Rules["客户访谈提问守则"]
+    Rules --> Good["✅ 黄金提问准则"]
+    Rules --> Bad["🚨 致命高危禁忌"]
 
     Good --> G1["永远问开放式问题 (Open-ended)"]
-    Good --> G2[追溯过去发生的真实事实]
-    Good --> G3[倾听占比 > 70%，多引导对方倾诉]
-    Good --> G4[遇冷救场神句: '这太有意思了，能多讲讲吗?']
+    Good --> G2["追溯过去发生的真实事实"]
+    Good --> G3["倾听占比 > 70%，多引导对方倾诉"]
+    Good --> G4["遇冷救场神句: '这太有意思了，能多讲讲吗?'"]
 
-    Bad --> B1[严禁提假设性问题: '如果做这个你会买吗?']
-    Bad --> B2[严禁提诱导性问题: '你不觉得这样更方便吗?']
+    Bad --> B1["严禁提假设性问题: '如果做这个你会买吗?'"]
+    Bad --> B2["严禁提诱导性问题: '你不觉得这样更方便吗?'"]
     Bad --> B3["严禁提二元封闭问题 (只能答是/否)"]
-    Bad --> B4[严禁让用户陷入可能撒谎的尴尬处境]
+    Bad --> B4["严禁让用户陷入可能撒谎的尴尬处境"]
 ```
 
 > [!CAUTION]
