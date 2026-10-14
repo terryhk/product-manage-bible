@@ -51,7 +51,7 @@ graph LR
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/your-username/product-manage-bible.git
+git clone https://github.com/terryhk/product-manage-bible.git
 cd product-manage-bible
 
 # 2. 安装依赖（以 VitePress 为例）
