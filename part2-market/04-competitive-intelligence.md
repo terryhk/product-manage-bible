@@ -16,7 +16,7 @@ graph TD
     Search --> S3["3. 核心卖点双引号精准轰炸 Exact Pitch Phrase"]
 
     S1 --- S1_d["在搜索框输入用户具体的抱怨语句，例如: '为什么某某软件不能同时导出PDF'"]
-    S2 --- S2_d["''site:v2ex.com [问题痛点"]' 或 'site:reddit.com [诉求]' 挖掘自发讨论"]
+    S2 --- S2_d["'site:v2ex.com 问题痛点' 或 'site:reddit.com 诉求' 挖掘自发讨论"]
     S3 --- S3_d["用双引号搜索产品一句话 Pitch，看谁打出了完全相同的口号"]
 ```
 

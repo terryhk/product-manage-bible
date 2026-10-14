@@ -195,14 +195,23 @@ graph TD
 ```mermaid
 flowchart TD
     T1["<b>09:00 - 10:00</b><br/>行业与竞品情报扫描<br/><i>邮件与未读消息过滤</i>"]
-    --> T2["<b>10:00 - 11:00</b><br/>监控指标大盘 (Metrics Dashboard)<br/><i>追踪核心KPI异常波动归因</i>"]
-    --> T3["<b>11:00 - 11:30</b><br/>研发每日站会 (Daily Standup)<br/><i>同步研发进度与排查阻碍</i>"]
-    --> T4["<b>11:30 - 12:00</b><br/>设计师方案同步 (Design Sync)<br/><i>探讨交互细节与用研反馈</i>"]
-    --> T5["<b>12:00 - 13:30</b><br/>深度工作 (Deep Work)<br/><i>编写用户故事、Epic Specs、PRD</i>"]
-    --> T6["<b>13:30 - 14:30</b><br/>体验验收 (Dogfooding)<br/><i>实际测试最新发布版本</i>"]
-    --> T7["<b>14:30 - 16:30</b><br/>跨职能推进 (Cross-functional)<br/><i>销售/运营/法务协同攻坚会</i>"]
-    --> T8["<b>16:30 - 18:00</b><br/>深度数据挖掘或用户访谈<br/><i>与数据团队/目标客户连线</i>"]
-    --> T9["<b>18:00+</b><br/>复盘今日 Action Items<br/><i>发送会议纪要与跟进邮件</i>"]
+    T2["<b>10:00 - 11:00</b><br/>监控指标大盘 (Metrics Dashboard)<br/><i>追踪核心KPI异常波动归因</i>"]
+    T3["<b>11:00 - 11:30</b><br/>研发每日站会 (Daily Standup)<br/><i>同步研发进度与排查阻碍</i>"]
+    T4["<b>11:30 - 12:00</b><br/>设计师方案同步 (Design Sync)<br/><i>探讨交互细节与用研反馈</i>"]
+    T5["<b>12:00 - 13:30</b><br/>深度工作 (Deep Work)<br/><i>编写用户故事、Epic Specs、PRD</i>"]
+    T6["<b>13:30 - 14:30</b><br/>体验验收 (Dogfooding)<br/><i>实际测试最新发布版本</i>"]
+    T7["<b>14:30 - 16:30</b><br/>跨职能推进 (Cross-functional)<br/><i>销售/运营/法务协同攻坚会</i>"]
+    T8["<b>16:30 - 18:00</b><br/>深度数据挖掘或用户访谈<br/><i>与数据团队/目标客户连线</i>"]
+    T9["<b>18:00+</b><br/>复盘今日 Action Items<br/><i>发送会议纪要与跟进邮件</i>"]
+
+    T1 --> T2
+    T2 --> T3
+    T3 --> T4
+    T4 --> T5
+    T5 --> T6
+    T6 --> T7
+    T7 --> T8
+    T8 --> T9
 
     style T1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
     style T2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;

@@ -69,9 +69,13 @@ graph TD
 ```mermaid
 flowchart LR
     S1["🌱 <b>导入期 (Introduction)</b><br/>规模小 / 亏损探索<br/><i>重心：验证 PMF 与留存</i>"]
-    --> S2["🚀 <b>成长期 (Growth)</b><br/>规模爆发 / 竞品跟进<br/><i>重心：规模获客与壁垒</i>"]
-    --> S3["👑 <b>成熟期 (Maturity)</b><br/>规模见顶 / 现金牛<br/><i>重心：精细运营与延长周期</i>"]
-    --> S4["🍂 <b>衰退期 (Decline)</b><br/>需求转移 / 利润萎缩<br/><i>重心：利润收割或平稳退市</i>"]
+    S2["🚀 <b>成长期 (Growth)</b><br/>规模爆发 / 竞品跟进<br/><i>重心：规模获客与壁垒</i>"]
+    S3["👑 <b>成熟期 (Maturity)</b><br/>规模见顶 / 现金牛<br/><i>重心：精细运营与延长周期</i>"]
+    S4["🍂 <b>衰退期 (Decline)</b><br/>需求转移 / 利润萎缩<br/><i>重心：利润收割或平稳退市</i>"]
+
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
 
     style S1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
     style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px;

@@ -15,8 +15,10 @@
 ```mermaid
 flowchart LR
     Pain["早期痛点：做二亏一<br/>· 个人英雄主义依赖<br/>· 功能部门接力棒推诿<br/>· 盲目上马，巨额沉没"] 
-    --> Trans["IPD 变革核心<br/>『变革就是利益的再分配』<br/>流程、IT、管理体系固化"]
-    --> Goal["制度化成果：去个人化<br/>· 把研发当商业投资<br/>· 跨职能并行工程<br/>· 保证财务与市场双成功"]
+    Trans["IPD 变革核心<br/>『变革就是利益的再分配』<br/>流程、IT、管理体系固化"]
+    Goal["制度化成果：去个人化<br/>· 把研发当商业投资<br/>· 跨职能并行工程<br/>· 保证财务与市场双成功"]
+    Pain --> Trans
+    Trans --> Goal
 
     style Pain fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px;
     style Trans fill:#fef3c7,stroke:#d97706,stroke-width:2px;
@@ -152,15 +154,19 @@ graph TD
     subgraph Macro["宏观层：IPD 商业投资主框架 (Business Governance)"]
         direction LR
         I_Charter["投资立项与战略规划<br/>(Portfolio / Charter)"] 
-        --> I_DCP["DCP 阶段性受控投资评审<br/>(ROI & Milestone)"] 
-        --> I_GTM["端到端商业上市发布<br/>(GTM / Financial Success)"]
+        I_DCP["DCP 阶段性受控投资评审<br/>(ROI & Milestone)"] 
+        I_GTM["端到端商业上市发布<br/>(GTM / Financial Success)"]
+        I_Charter --> I_DCP
+        I_DCP --> I_GTM
     end
 
     subgraph Micro["微观层：敏捷与 DevSecOps 持续迭代 (Agile Execution)"]
         direction LR
         A_Epics["需求拆解为用户故事<br/>(User Stories / Epics)"]
-        --> A_Sprint["2~4 周 Sprint 冲刺迭代<br/>(Continuous Integration)"]
-        --> A_Deploy["灰度发布与快速反馈<br/>(Continuous Delivery)"]
+        A_Sprint["2~4 周 Sprint 冲刺迭代<br/>(Continuous Integration)"]
+        A_Deploy["灰度发布与快速反馈<br/>(Continuous Delivery)"]
+        A_Epics --> A_Sprint
+        A_Sprint --> A_Deploy
     end
 
     Macro === Micro

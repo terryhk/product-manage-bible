@@ -95,8 +95,10 @@ flowchart TD
 ```mermaid
 flowchart LR
     Step1["1. 能用 (Functional)<br/>跑通闭环 / 稳定可靠"] 
-    --> Step2["2. 好用 (Usable & Rational)<br/>产品经理的天职<br/>简单 / 顺畅 / 无认知负担"] 
-    --> Step3["3. 好看 (Aesthetic)<br/>UI / 视觉专家的领地<br/>比例 / 留白 / 视觉韵律"]
+    Step2["2. 好用 (Usable & Rational)<br/>产品经理的天职<br/>简单 / 顺畅 / 无认知负担"] 
+    Step3["3. 好看 (Aesthetic)<br/>UI / 视觉专家的领地<br/>比例 / 留白 / 视觉韵律"]
+    Step1 --> Step2
+    Step2 --> Step3
 
     style Step1 fill:#f1f5f9,stroke:#94a3b8,stroke-width:1.5px;
     style Step2 fill:#eff6ff,stroke:#2563eb,stroke-width:2.5px;
@@ -149,13 +151,21 @@ flowchart LR
 ```mermaid
 flowchart TD
     P1["🌱 <b>第一篇：认知底座</b><br/>第1-2章 认知定位、三圈模型与双通道晋升"]
-    --> P2["🔭 <b>第二篇：战略洞察</b><br/>第3-4章 宏观五力、PESTEL与四维竞品雷达"]
-    --> P3["🔍 <b>第三篇：需求真伪</b><br/>第5-7章 想法源泉、伪需求刺破与客户开发访谈"]
-    --> P4["🧪 <b>第四篇：精益验证</b><br/>第8-11章 假设识别、MVP实验与线框低保真原型"]
-    --> P5["🚀 <b>第五篇：敏捷交付</b><br/>第12-15章 研发双轨、Scrum/看板、用户故事与优先级"]
-    --> P6["📈 <b>第六篇：数据度量</b><br/>第16-18章 指标心智、HEART模型与AARRR漏斗归因"]
-    --> P7["🤝 <b>第七篇：跨界协同</b><br/>第19-21章 干系人政治、高效会议模板与职场术语黑话"]
-    --> P8["🏔️ <b>第八篇：行业纵深</b><br/>第22-26章 ToB壁垒、电信云网、硬件量产、华为IPD与大师心智"]
+    P2["🔭 <b>第二篇：战略洞察</b><br/>第3-4章 宏观五力、PESTEL与四维竞品雷达"]
+    P3["🔍 <b>第三篇：需求真伪</b><br/>第5-7章 想法源泉、伪需求刺破与客户开发访谈"]
+    P4["🧪 <b>第四篇：精益验证</b><br/>第8-11章 假设识别、MVP实验与线框低保真原型"]
+    P5["🚀 <b>第五篇：敏捷交付</b><br/>第12-15章 研发双轨、Scrum/看板、用户故事与优先级"]
+    P6["📈 <b>第六篇：数据度量</b><br/>第16-18章 指标心智、HEART模型与AARRR漏斗归因"]
+    P7["🤝 <b>第七篇：跨界协同</b><br/>第19-21章 干系人政治、高效会议模板与职场术语黑话"]
+    P8["🏔️ <b>第八篇：行业纵深</b><br/>第22-26章 ToB壁垒、电信云网、硬件量产、华为IPD与大师心智"]
+
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> P6
+    P6 --> P7
+    P7 --> P8
 
     style P1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px;
     style P2 fill:#f8fafc,stroke:#64748b,stroke-width:1.5px;

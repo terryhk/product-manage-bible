@@ -25,8 +25,8 @@ flowchart TD
 ```mermaid
 graph LR
     Install["单纯安装用户 (Installed)<br/>• 用户下载了 App 或打开了网页<br/>• 尚未体验到任何核心业务价值<br/>• 3天内流失率通常高达 80%~90%"]
-    -->|"经历 Aha Moment / 完成首个核心动作"|
     Active["真正激活用户 (Activated)<br/>• 跨越了认知摩擦门槛<br/>• 亲身体验到了核心解决痛点的爽点<br/>• 长期留存率提升 3~5 倍以上"]
+    Install -->|"经历 Aha Moment / 完成首个核心动作"| Active
 ```
 
 ### 什么是“Aha Moment”（惊喜时刻）？
@@ -78,8 +78,8 @@ flowchart TD
 ```mermaid
 flowchart LR
     CAC["单个获客成本 (CAC)<br/>Customer Acquisition Cost<br/>(总市场销售费用 / 获取新客数)"]
-    <-->|"黄金对比比例"|
     LTV["单个用户生命周期总价值 (LTV)<br/>Customer Lifetime Value<br/>(单客在全生命周期贡献的净毛利总和)"]
+    CAC <-->|"黄金对比比例"| LTV
 ```
 
 ### LTV / CAC 黄金比例法则
