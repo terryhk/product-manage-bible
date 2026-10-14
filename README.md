@@ -8,6 +8,16 @@
 
 ---
 
+## 封面
+
+<p align="center">
+  <img src="cover.jpg" alt="封面" width="360"/>
+  <br/>
+  <em>《产品经理全栈精进指南：从认知到实战》封面</em>
+</p>
+
+---
+
 ## 📖 项目愿景与特色
 
 本项目源自一线产品从业者数年沉淀的 Obsidian 核心笔记网络，经过系统性重构与工业级推演，旨在为中文互联网与开源社区提供一份**体系严密、案例翔实、开箱即用**的产品经理全生命周期知识库。
@@ -66,6 +76,16 @@ npm run docs:dev
 ## 🤝 贡献与共建
 
 欢迎通过 Issue 提交勘误、建议，或通过 Pull Request 分享您的实战案例与复盘总结。请参阅 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解详细协作规范。
+
+---
+
+## 背面
+
+<p align="center">
+  <img src="back-cover.jpg" alt="背面" width="360"/>
+  <br/>
+  <em>《产品经理全栈精进指南：从认知到实战》背面</em>
+</p>
 
 ---
 
