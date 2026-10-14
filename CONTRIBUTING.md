@@ -29,7 +29,7 @@
 3. **编辑内容**：
    - 保持 UTF-8 编码；
    - 遵循 Markdown 规范与全角/半角标点符号排版规范；
-   - 如需引入配图，请将图片放置于 `docs/assets/images/` 目录下，并使用语义化英文命名。
+   - 如需引入配图，请将图片放置于 `assets/images/` 目录下，并使用语义化英文命名。
 4. **提交 Commit**：
    - 建议遵循 Conventional Commits 规范，例如：
      - `docs: fix typo in chapter 15 prioritization`

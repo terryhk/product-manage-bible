@@ -244,24 +244,18 @@ product-manage-bible/
 │   │   ├── bug_report.md        # 内容勘误与建议模板
 │   │   └── case_submission.md   # 案例投稿模板
 │   └── pull_request_template.md # PR 提交规范
-├── docs/                        # 文档核心内容源目录
-│   ├── .vitepress/              # VitePress 站点配置
-│   │   ├── config.ts            # 站点导航栏、侧边栏、搜索、Mermaid 插件配置
-│   │   └── theme/               # 自定义主题与样式
-│   ├── public/                  # 静态资源与 Favicon
-│   ├── assets/                  # 全书统一图表与多媒体资源目录
-│   │   └── diagrams/            # 架构图、数据图
-│   ├── part1-cognition/         # 第一篇：认知与定位篇
-│   ├── part2-market/            # 第二篇：市场与竞争篇
-│   ├── part3-requirements/      # 第三篇：需求挖掘与真伪篇
-│   ├── part4-lean-mvp/          # 第四篇：精益创业与 MVP 实战篇
-│   ├── part5-agile-delivery/    # 第五篇：敏捷研发与项目推进篇
-│   ├── part6-metrics/           # 第六篇：数据驱动与产品度量篇
-│   ├── part7-collaboration/     # 第七篇：跨职能协同与团队管理篇
-│   ├── part8-industry-wisdom/   # 第八篇：行业纵深与大师心智篇
-│   └── index.md                 # 电子书主页（Hero 介绍、快速开始、全书导览）
-├── package.json                 # 项目依赖与 Scripts (vitepress dev / build)
-├── LICENSE                      # 开源协议 (CC BY-NC-SA 4.0 或 MIT)
+├── assets/                      # 全书统一图表与多媒体资源目录
+│   └── images/                  # 28张高清实战图表与手绘脑图
+├── part1-cognition/             # 第一篇：认知与定位篇
+├── part2-market/                # 第二篇：市场与竞争篇
+├── part3-requirements/          # 第三篇：需求挖掘与真伪篇
+├── part4-lean-mvp/              # 第四篇：精益创业与 MVP 实战篇
+├── part5-agile-delivery/        # 第五篇：敏捷研发与项目推进篇
+├── part6-metrics/               # 第六篇：数据驱动与产品度量篇
+├── part7-collaboration/         # 第七篇：跨职能协同与团队管理篇
+├── part8-industry-wisdom/       # 第八篇：行业纵深与大师心智篇
+├── PRD-Product-Management-Bible.md # 需求规划与架构设计文档
+├── LICENSE                      # 开源协议 (CC BY-NC-SA 4.0)
 ├── CONTRIBUTING.md              # 社区共建与贡献指南
 └── README.md                    # 仓库门户说明书 (项目定位、徽章、在线阅读链接、目录总览)
 ```
@@ -271,7 +265,7 @@ product-manage-bible/
    - 将 Obsidian 内部形如 `[[ARCH-偽需求|偽需求]]` 转换为相对路径 Markdown 语法 `[偽需求](../part3-requirements/fake-demands.md)`。
 2. **图片资源治理**：
    - 将散落在 Roam/Obsidian 附件目录中相关图片（如 `PVFvMjtoFg.png`、`HcM6x3CR1g.png`、`6E7wARmPh_.png`、`Nu4nnpvq-k.png` 等）提取并重命名为具象语义化文件名（如 `tob-vs-toc-matrix.png`、`pm-three-rings.png`）。
-   - 统一存放在 `docs/assets/` 下，统一通过绝对路径 `/assets/...` 或相对路径引用。
+   - 统一存放在 `assets/images/` 下，统一通过相对路径引用。
 3. **图表现代化渲染**：
    - 优先采用 **Mermaid 文本代码块** 替代模糊的低清手绘图，确保可维护、自适应深色/浅色模式、易修改。
 

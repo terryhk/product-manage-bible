@@ -34,14 +34,14 @@ graph LR
 
 | 篇章 | 主题 | 核心内容 | 状态 |
 | :--- | :--- | :--- | :---: |
-| **[第一篇](./docs/part1-cognition/index.md)** | **认知与定位篇** | 什么是产品经理、三环模型、Stop Doing List、职业天梯、冰山模型、十年宿命 | 🟢 已完成 |
-| **[第二篇](./docs/part2-market/index.md)** | **市场与竞争篇** | 市场容量 Top-down/Bottom-up 测算、波特五力模型、竞品五维分析、Feature Table | 🟢 已完成 |
-| **[第三篇](./docs/part3-requirements/index.md)** | **需求挖掘与真伪篇** | EMUC 来源、伪需求粉碎机、5次 Why、OFO 案例分析、Steve Blank 客户开发 | 🟢 已完成 |
-| **[第四篇](./docs/part4-lean-mvp/index.md)** | **精益创业与 MVP 实战篇** | 假设拆解、最致命风险四象限、6类 MVP 战法、MCS 成功阈值公式 | 🟢 已完成 |
-| **[第五篇](./docs/part5-agile-delivery/index.md)** | **敏捷研发与项目推进篇** | Scrum vs 看板、Epic Spec、User Story 与 AC 规范、Kano/BUC/MoSCoW 优先级 | 🟢 已完成 |
-| **[第六篇](./docs/part6-metrics/index.md)** | **数据驱动与产品度量篇** | HEART 框架、AARRR 海盗模型、指标设计哲学、激活与留存度量 | 🟢 已完成 |
-| **[第七篇](./docs/part7-collaboration/index.md)** | **跨职能协同与团队管理篇** | 与研发/设计/高管/销售高效协同、会议前中后闭环、外企行业暗语速查 | 🟢 已完成 |
-| **[第八篇](./docs/part8-industry-wisdom/index.md)** | **行业纵深与大师心智篇** | ToB 四大形态、电信网络支撑系统、硬件生态链、华为 IPD 实录、张小龙产品方法论 | 🟢 已完成 |
+| **[第一篇](./part1-cognition/index.md)** | **认知与定位篇** | 什么是产品经理、三环模型、Stop Doing List、职业天梯、冰山模型、十年宿命 | 🟢 已完成 |
+| **[第二篇](./part2-market/index.md)** | **市场与竞争篇** | 市场容量 Top-down/Bottom-up 测算、波特五力模型、竞品五维分析、Feature Table | 🟢 已完成 |
+| **[第三篇](./part3-requirements/index.md)** | **需求挖掘与真伪篇** | EMUC 来源、伪需求粉碎机、5次 Why、OFO 案例分析、Steve Blank 客户开发 | 🟢 已完成 |
+| **[第四篇](./part4-lean-mvp/index.md)** | **精益创业与 MVP 实战篇** | 假设拆解、最致命风险四象限、6类 MVP 战法、MCS 成功阈值公式 | 🟢 已完成 |
+| **[第五篇](./part5-agile-delivery/index.md)** | **敏捷研发与项目推进篇** | Scrum vs 看板、Epic Spec、User Story 与 AC 规范、Kano/BUC/MoSCoW 优先级 | 🟢 已完成 |
+| **[第六篇](./part6-metrics/index.md)** | **数据驱动与产品度量篇** | HEART 框架、AARRR 海盗模型、指标设计哲学、激活与留存度量 | 🟢 已完成 |
+| **[第七篇](./part7-collaboration/index.md)** | **跨职能协同与团队管理篇** | 与研发/设计/高管/销售高效协同、会议前中后闭环、外企行业暗语速查 | 🟢 已完成 |
+| **[第八篇](./part8-industry-wisdom/index.md)** | **行业纵深与大师心智篇** | ToB 四大形态、电信网络支撑系统、硬件生态链、华为 IPD 实录、张小龙产品方法论 | 🟢 已完成 |
 
 ---
 
